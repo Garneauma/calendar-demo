@@ -518,7 +518,7 @@
 	<main class="container" property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
 		<h1 id="wb-cont" property="name">Procurement Assistance Canada seminars and events</h1>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsa beatae! Doloribus debitis temporibus cum ab voluptatem ratione assumenda earum, saepe, odit quis nemo vero amet laboriosam, animi iste ipsam nesciunt. Ab sed quidem eum facere quae! At iusto dolor itaque, modi obcaecati impedit, excepturi sequi, ab molestiae dignissimos amet.</p>
-		<section>
+		<section class="wb-tagfilter provisional">
 			<h2><a href="2022-08.html" title="Previous month" class="mrgn-rght-lg"><span class="fa fa-chevron-left"></span><span class="sr-only">Previous month</span></a> September 2022 <a href="#" title="Next month" class="mrgn-lft-lg"><span class="fa fa-chevron-right"></span><span class="sr-only">Next month</span></a></h2>
 			<div class="row">
 				<div class="col-sm-6 col-md-7 col-lg-8">
@@ -602,12 +602,12 @@
 								<ul class="list-unstyled">
 									<li class="checkbox">
 										<label for="languageFR">
-											<input type="checkbox" name="language" id="languageFR" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="languageFR" checked> French
+											<input type="checkbox" name="language" id="languageFR" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="languageFR"> French
 										</label>
 									</li>
 									<li class="checkbox">
 										<label for="languageBI">
-											<input type="checkbox" name="language" id="languageBI" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="languageBI" checked> Bilingual
+											<input type="checkbox" name="language" id="languageBI" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="languageBI"> Bilingual
 										</label>
 									</li>
 								</ul>
@@ -619,7 +619,7 @@
 								<ul class="list-unstyled">
 									<li class="checkbox">
 										<label for="locationMontreal">
-											<input type="checkbox" name="location" id="locationMontreal" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="locationMontreal" checked> Montreal
+											<input type="checkbox" name="location" id="locationMontreal" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="locationMontreal"> Montreal
 										</label>
 									</li>
 								</ul>
@@ -831,6 +831,14 @@
 
 
 	<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.dc05643fdb8d0e2b89e5cc3c1d26d1b5.html?origin=http%3A%2F%2Flocalhost%3A4000" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
+
+	<script>
+		$(document).ready(function() {
+			$( "#filteredEventsList" ).on( "wb-updated.wb-tagfilter", function( event ) {
+				$("#eventsList").trigger("redraw.wb-calevt");
+			});
+		});
+	</script>
 </body>
 
 </html>
