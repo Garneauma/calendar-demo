@@ -508,7 +508,7 @@
 			<h2><a href="#" title="Previous month" class="mrgn-rght-lg"><span class="fa fa-chevron-left"></span><span class="sr-only">Previous month</span></a> August 2022 <a href="2022-09.html" title="Next month" class="mrgn-lft-lg"><span class="fa fa-chevron-right"></span><span class="sr-only">Next month</span></a></h2>
 			<div class="row">
 				<div class="col-sm-6 col-md-7 col-lg-8">
-					<div id="eventsList" class="wb-calevt evt-anchor" data-calevt-src="calendar1">
+					<div id="eventsList" class="wb-calevt" data-calevt-src="calendar1">
 						<ul class="list-unstyled events-list">
 							<li class="cal-disp-onshow" data-wb-tags="language__english location__online">
 								<section class="wb-addcal provisional" typeof="Event">
@@ -881,7 +881,7 @@
 	<script>
 		$(document).ready(function() {
 			$( "#filteredEventsList" ).on( "wb-updated.wb-tagfilter", function( event ) {
-				$("#eventsList").trigger("redraw.wb-calevt");
+				$("#eventsList").trigger("wb-redraw.wb-calevt");
 			});
 		});
 	</script>
