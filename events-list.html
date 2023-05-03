@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-	<title>Campaign name - Canada.ca</title>
+	<title>Procurement support for businesses - Find an event</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta name="description" content=" ">
 	<link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon" href="./dist/GCWeb/assets/favicon-mobile.png">
@@ -16,14 +16,22 @@
 	<script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline.d73eae5387f08ab9f8b71dcf9d12d391.js"></script>
 	<script charset="utf-8" src="https://platform.twitter.com/js/timeline.ef1e579d99cb7409198460b5a0fa4ac6.js"></script>
 	<style>
-		.cal-month-prev,
-		.cal-month-next {
-			display: none;
-		}
-
 		.events-list>li {
 			border-bottom: solid 1px #ccc;
 			padding-bottom: 24px;
+		}
+
+		details fieldset legend {
+			font-size: 20px;
+		}
+
+		.wb-fltr-info {
+			font-size: 34px;
+		}
+
+		dl.event-details dt,
+		dl.event-details dd {
+			display: inline;
 		}
 	</style>
 </head>
@@ -496,179 +504,320 @@
 						</a>
 						<meta property="position" content="1">
 					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+							<span property="name">Business and industry</span>
+						</a>
+						<meta property="position" content="2">
+					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+							<span property="name">Doing business with government</span>
+						</a>
+						<meta property="position" content="3">
+					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+							<span property="name">How to sell to government</span>
+						</a>
+						<meta property="position" content="4">
+					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+							<span property="name">Procurement support for businesses</span>
+						</a>
+						<meta property="position" content="5">
+					</li>
 				</ol>
 			</div>
 		</nav>
 	</header>
 
 	<main class="container" property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
-		<h1 id="wb-cont" property="name">Procurement Assistance Canada seminars and events</h1>
+		<hgroup>
+			<p class="h3 mrgn-bttm-sm fnt-nrml text-muted">Procurement support for businesses</p>
+			<h1 id="wb-cont" property="name" class="gc-thickline mrgn-tp-0">Find an event</h1>
+		</hgroup>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsa beatae! Doloribus debitis temporibus cum ab voluptatem ratione assumenda earum, saepe, odit quis nemo vero amet laboriosam, animi iste ipsam nesciunt. Ab sed quidem eum facere quae! At iusto dolor itaque, modi obcaecati impedit, excepturi sequi, ab molestiae dignissimos amet.</p>
-		<section id="filteredEventsList" class="wb-tagfilter provisional">
-			<h2><a href="#" title="Previous month" class="mrgn-rght-lg"><span class="fa fa-chevron-left"></span><span class="sr-only">Previous month</span></a> August 2022 <a href="2022-09.html" title="Next month" class="mrgn-lft-lg"><span class="fa fa-chevron-right"></span><span class="sr-only">Next month</span></a></h2>
+		<section id="filteredEventsList" class="wb-tagfilter provisional wb-filter mrgn-tp-lg" data-wb-filter='{
+			"uiTemplate": "#filteredEventsList",
+			"selector": "article",
+			"section": ".events-list"
+		}'>
+			<h2 class="wb-inv">Events list</h2>
 			<div class="row">
 				<div class="col-sm-6 col-md-7 col-lg-8">
-					<div id="eventsList" class="wb-calevt evt-anchor" data-calevt-src="calendar1">
-						<ul class="list-unstyled events-list">
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__online">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Ask PAC Anything!</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-05 12:00-04:00">Friday August 5th, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-08-05 13:00-04:00">1:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location" typeof="VirtualLocation">Online</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__vancouver">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Bidding on Opportunities</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-10 14:00-07:00">Wednesday August 10th, 2022 | 2:00 PM</time> to <time property="endDate" datetime="2022-08-10 15:30-07:00">3:30 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location" typeof="Place">Vancouver</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__ottawa">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Doing business with the Government of Canada (Webinar)</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-11 12:00-04:00">Thursday August 11th, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-08-11 14:00-04:00">2:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Ottawa</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__online">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Ask PAC Anything!</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-12 12:00-04:00">Friday August 12th, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-08-12 13:00-04:00">1:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Online</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__ottawa">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Bidding on opportunities (Webinar)</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-18 12:00-04:00">Thursday August 18th, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-08-18 14:00-04:00">2:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Ottawa</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__online">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Ask PAC Anything!</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-19 12:00-04:00">Friday August 19th, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-08-19 13:00-04:00">1:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Online</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__french location__ottawa">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Workshop to register in the Supplier Registration Information (SRI) system and in the Indigenous Business Directory (IBD) for Indigenous-led businesses</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-25 09:30-04:00">Thursday August 25th, 2022 | 9:30 AM</time> to <time property="endDate" datetime="2022-08-25 11:00-04:00">11:00 AM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Ottawa</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__ottawa">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Workshop to register in the Supplier Registration Information (SRI) system and in the Indigenous Business Directory (IBD) for Indigenous-led businesses</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-25 13:00-04:00">Thursday August 25th, 2022 | 1:00 PM</time> to <time property="endDate" datetime="2022-08-25 14:30-04:00">2:30 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Ottawa</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__french location__montreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-25 13:30-04:00">Thursday August 25th, 2022 | 1:30 PM</time> to <time property="endDate" datetime="2022-08-25 15:00-04:00">3:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__vancouver">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-25 14:00-04:00">Thursday August 25th, 2022 | 2:00 PM</time> to <time property="endDate" datetime="2022-08-25 15:30-04:00">3:30 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Vancouver</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__online">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Ask PAC Anything!</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-26 12:00-04:00">Friday August 26th, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-08-26 13:30-04:00">1:30 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Online</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__toronto">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Mythbusting Federal Government Procurement and Overview of Innovation for Defence, Excellence and Security (IDEaS)</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-30 10:00-04:00">Tuesday August 30th, 2022 | 10:00 AM</time> to <time property="endDate" datetime="2022-08-30 11:00-04:00">11:00 AM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Toronto</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__french location__montreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Register as supplier and find opportunities on BuyAndSell.gc.ca</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-30 13:30-04:00">Tuesday August 30th, 2022 | 1:30 PM</time> to <time property="endDate" datetime="2022-08-30 15:00-04:00">3:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb-tags="language__english location__toronto">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Federal Procurement Virtual Drop-in Café</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-08-31 15:00-04:00">Wednesday August 31th, 2022 | 3:00 PM</time> to <time property="endDate" datetime="2022-08-31 16:00-04:00">4:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Toronto</span></span><span property="description"><strong>Language</strong>: English</span></p>
-								</section>
+					<div class="row">
+						<div class="col-xs-6">
+							<p class="wb-fltr-info"><b data-nbitem></b> events</p>
+						</div>
+						<div class="col-xs-6">
+							<p class="text-right text-muted mrgn-tp-sm"><small><i class="mrgn-rght-sm">Sorted by date ascending</i> <span class="fa fa-arrow-down"></span></small></p>
+						</div>
+					</div>
+					<div class="events-list wb-tagfilter-items">
+						<article data-wb-tags="language__english format__online month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Friday, August 5, 2022, 12 pm - 1 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Online</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english location__vancouver format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Bidding on Opportunities</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Wednesday, August 10, 2022, 2 pm - 3:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Vancouver</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english location__ottawa format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing business with the Government of Canada (Webinar)</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 11, 2022, 2 pm - 3:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english format__online month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Friday, August 12, 2022, 12 pm - 1 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Online</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english location__ottawa format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Bidding on opportunities (Webinar)</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 18, 2022, 2 pm - 3:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english format__online month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Friday, August 19, 2022, 12 pm - 1 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Online</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__french location__ottawa format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Workshop to register in the Supplier Registration Information (SRI) system and in the Indigenous Business Directory (IBD) for Indigenous-led businesses</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 25, 2022, 9:30 am - 11 am EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>French</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english location__ottawa format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Workshop to register in the Supplier Registration Information (SRI) system and in the Indigenous Business Directory (IBD) for Indigenous-led businesses</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 25, 2022, 1 pm - 2:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__french location__montreal format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 25, 2022, 1:30 pm - 3 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Montreal</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>French</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english location__vancouver format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 25, 2022, 2 pm - 3:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Vancouver</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english format__online month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Friday, August 26, 2022, 12 pm - 1:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Online</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english location__toronto format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Mythbusting Federal Government Procurement and Overview of Innovation for Defence, Excellence and Security (IDEaS)</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Tuesday, August 30, 2022, 10 am - 11 am EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Toronto</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__french location__montreal format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Register as supplier and find opportunities on BuyAndSell.gc.ca</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Tuesday, August 30, 2022, 1:30 pm - 3 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Montreal</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>French</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="language__english location__toronto format__inperson month__august">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Federal Procurement Virtual Drop-in Café</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Wednesday, August 31, 2022, 3 pm - 4 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Toronto</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+					</div>
+					<!-- <nav aria-label="Page navigation">
+						<ul class="pagination">
+							<li class="active"><a href="#"><b>1</b><span class="sr-only"> (current)</span></a></li>
+							<li><a href="#"><b>2</b></a></li>
+							<li><a href="#"><b>3</b></a></li>
+							<li><a href="#"><b>4</b></a></li>
+							<li><a href="#"><b>5</b></a></li>
+							<li><a href="#"><b>6</b></a></li>
+							<li><a href="#"><b>7</b></a></li>
+							<li><a href="#"><b>8</b></a></li>
+							<li><a href="#"><b>9</b></a></li>
+							<li><a href="#"><b>10</b></a></li>
+							<li>
+								<a href="#"><b>Next</b><small aria-hidden="true" class="mrgn-lft-sm"><b><span class="fa fa-arrow-right"></span></small></b></a>
 							</li>
 						</ul>
-					</div>
+					</nav> -->
 				</div>
-				<div class="col-sm-6 col-md-5 col-lg-4 mrgn-tp-lg">
-					<div id="calendar1" class="cal-cnt-fluid mrgn-bttm-lg"></div>
+				<div class="col-sm-6 col-md-5 col-lg-4">
 					<details open>
 						<summary>
-							<h3 class="h4">Filter options</h3>
+							<h3 class="h4">Filter events</h3>
 						</summary>
-						<div class="form-group mrgn-bttm-0">
-							<fieldset>
-								<legend class="h5 mrgn-tp-0"><span class="field-name">Language</span></legend>
-								<ul class="list-unstyled">
-									<li class="radio">
-										<label for="language__all">
-											<input type="radio" name="language" id="language__all" class="wb-tagfilter-ctrl" value="" checked> All
-										</label>
-									</li>
-									<li class="radio">
-										<label for="language__french">
-											<input type="radio" name="language" id="language__french" class="wb-tagfilter-ctrl" value="language__french"> French
-										</label>
-									</li>
-									<li class="radio">
-										<label for="language__english">
-											<input type="radio" name="language" id="language__english" class="wb-tagfilter-ctrl" value="language__english"> English
-										</label>
-									</li>
-								</ul>
-							</fieldset>
+						<div class="form-group">
+							<label for="filterSearch">Search</label>
+							<input type="search" id="filterSearch" class="form-control full-width" placeholder="Type a keyword, a day, or a month">
+						</div>
+						<div class="form-group">
+							<label for="filterMonth">Month</label>
+							<select name="filterMonth" id="filterMonth" class="form-control full-width wb-tagfilter-ctrl">
+								<option value="">Any</option>
+								<option value="month__january">January</option>
+								<option value="month__february">February</option>
+								<option value="month__march">March</option>
+								<option value="month__april">April</option>
+								<option value="month__may">May</option>
+								<option value="month__june">June</option>
+								<option value="month__july">July</option>
+								<option value="month__august">August</option>
+								<option value="month__september">September</option>
+								<option value="month__october">October</option>
+								<option value="month__november">November</option>
+								<option value="month__december">December</option>
+							</select>
 						</div>
 						<div class="form-group mrgn-bttm-0">
-							<fieldset>
-								<legend class="h5 mrgn-tp-0"><span class="field-name">Event location</span></legend>
-								<ul class="list-unstyled">
-									<li class="checkbox">
-										<label for="location__montreal">
-											<input type="checkbox" name="location" id="location__montreal" class="wb-tagfilter-ctrl" value="location__montreal"> Montreal
-										</label>
-									</li>
-									<li class="checkbox">
-										<label for="location__online">
-											<input type="checkbox" name="location" id="location__online" class="wb-tagfilter-ctrl" value="location__online"> Online
-										</label>
-									</li>
-									<li class="checkbox">
-										<label for="location__ottawa">
-											<input type="checkbox" name="location" id="location__ottawa" class="wb-tagfilter-ctrl" value="location__ottawa"> Ottawa
-										</label>
-									</li>
-									<li class="checkbox">
-										<label for="location__toronto">
-											<input type="checkbox" name="location" id="location__toronto" class="wb-tagfilter-ctrl" value="location__toronto"> Toronto
-										</label>
-									</li>
-									<li class="checkbox">
-										<label for="location__vancouver">
-											<input type="checkbox" name="location" id="location__vancouver" class="wb-tagfilter-ctrl" value="location__vancouver"> Vancouver
-										</label>
-									</li>
-								</ul>
+							<fieldset class="p-0">
+								<legend class="mrgn-tp-0 mrgn-bttm-sm"><b>Format</b></legend>
+								<div class="checkbox">
+									<label for="format__online">
+										<input type="checkbox" name="format" id="format__online" class="wb-tagfilter-ctrl" value="format__online"> Online
+									</label>
+								</div>
+								<div class="checkbox">
+									<label for="format__inperson">
+										<input type="checkbox" name="format" id="format__inperson" class="wb-tagfilter-ctrl" value="format__inperson"> In-person
+									</label>
+								</div>
+							</fieldset>
+						</div>
+						<div class="form-group">
+							<label for="filterLocation">Location</label>
+							<select name="filterLocation" id="filterLocation" class="form-control full-width wb-tagfilter-ctrl">
+								<option value="">Any</option>
+								<option value="location__montreal">Montreal</option>
+								<option value="location__ottawa">Ottawa</option>
+								<option value="location__toronto">Toronto</option>
+								<option value="location__vancouver">Vancouver</option>
+							</select>
+						</div>
+						<div class="form-group mrgn-bttm-0">
+							<fieldset class="p-0">
+								<legend class="mrgn-tp-0 mrgn-bttm-sm"><b>Language</b></legend>
+								<div class="checkbox">
+									<label for="language__english">
+										<input type="checkbox" name="language" id="language__english" class="wb-tagfilter-ctrl" value="language__english"> English
+									</label>
+								</div>
+								<div class="checkbox">
+									<label for="language__french">
+										<input type="checkbox" name="language" id="language__french" class="wb-tagfilter-ctrl" value="language__french"> French
+									</label>
+								</div>
+								<div class="checkbox">
+									<label for="language__bilingual">
+										<input type="checkbox" name="language" id="language__bilingual" class="wb-tagfilter-ctrl" value="language__bilingual"> Bilingual
+									</label>
+								</div>
+								<div class="checkbox">
+									<label for="language__other">
+										<input type="checkbox" name="language" id="language__other" class="wb-tagfilter-ctrl" value="language__other"> Other
+									</label>
+								</div>
 							</fieldset>
 						</div>
 					</details>
@@ -679,150 +828,10 @@
 		<footer class="pagedetails">
 			<h2 class="wb-inv">Page details</h2>
 			<div class="row">
-				<div class="col-sm-8 col-md-9 col-lg-9">
-					<div data-ajax-replace="/sites/feedback/ajax/report-problem-en.html" class="wb-init wb-data-ajax-replace-inited">
-						<div class="row row-no-gutters">
-							<div class="col-sm-9 col-md-6 col-lg-5">
-								<details class="brdr-0">
-									<summary class="btn btn-default text-center">Report a problem on this page</summary>
-									<div class="well row">
-										<div class="gc-rprt-prblm">
-											<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
-												<form action="/sites/feedback/feedback-form-destination.html" id="gc-rprt-prblm-form" class="wb-postback" data-wb-postback="{&quot;success&quot;:&quot;.success-message&quot;,&quot;failure&quot;:&quot;.failure-message&quot;}">
-
-													<input type="hidden" name="externalReferer" value="">
-													<input type="hidden" name="pageTitle" value="">
-													<input type="hidden" name="submissionPage" value="">
-													<input type="hidden" value="en">
-													<input type="hidden" name="pageOwner" value="gc:institutions/">
-													<input name="subject" type="hidden" value="Report a problem or mistake on this page">
-													<fieldset>
-														<legend>
-															<span class="field-name">Please select all that apply:</span>
-														</legend>
-														<div class="checkbox">
-															<label for="problem1">
-																<input name="problem1" id="problem1" type="checkbox" value="Yes">A link, button or video is not working
-															</label>
-															<input name="problem1" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem2">
-																<input name="problem2" id="problem2" type="checkbox" value="Yes">It has a spelling mistake
-															</label>
-															<input name="problem2" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem3">
-																<input name="problem3" id="problem3" type="checkbox" value="Yes">Information is missing
-															</label>
-															<input name="problem3" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem4">
-																<input name="problem4" id="problem4" type="checkbox" value="Yes">Information is outdated or wrong
-															</label>
-															<input name="problem4" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem5">
-																<input name="problem5" id="problem5" type="checkbox" value="Yes">Login error when trying to access an account (e.g. My Service Canada Account)
-															</label>
-															<input name="problem5" type="hidden" value="">
-														</div>
-														<ul>
-															<li class="checkbox">
-																<label for="problem6a">
-																	<input name="problem6" id="problem6a" type="checkbox" value="Yes">GC Key access
-																</label>
-																<input name="problem6" type="hidden" value="">
-															</li>
-															<li class="checkbox">
-																<label for="problem7">
-																	<input name="problem7" id="problem7" type="checkbox" value="Yes">SecureKey Concierge (Banking Credential) access
-																</label>
-																<input name="problem7" type="hidden" value="">
-															</li>
-															<li class="checkbox">
-																<label for="problem8">
-																	<input name="problem8" id="problem8" type="checkbox" value="Yes">Personal Access Code (PAC) problems or EI Access Code (AC) problems
-																</label>
-																<input name="problem8" type="hidden" value="">
-															</li>
-															<li class="checkbox">
-																<label for="problem9">
-																	<input name="problem9" id="problem9" type="checkbox" value="Yes">Social Insurance Number (SIN) validation problems
-																</label>
-																<input name="problem9" type="hidden" value="">
-															</li>
-															<li class="checkbox">
-																<label for="problem10">
-																	<input name="problem10" id="problem10" type="checkbox" value="Yes">Other login error not in this list
-																</label>
-																<input name="problem10" type="hidden" value="">
-															</li>
-														</ul>
-														<div class="checkbox">
-															<label for="problem11">
-																<input name="problem11" id="problem11" type="checkbox" value="Yes">I can't find what I'm looking for
-															</label>
-															<input name="problem11" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem12">
-																<input name="problem12" id="problem12" type="checkbox" value="Yes">Other issue not in this list
-															</label>
-															<input name="problem12" type="hidden" value="">
-														</div>
-													</fieldset>
-													<button type="submit" class="btn btn-primary">Submit</button>
-												</form>
-
-											</div>
-											<div class="success-message hide">
-												<h3>Thank you for your help!</h3>
-												<p>You will not receive a reply. For enquiries, please <a href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
-											</div>
-											<p class="failure-message hide">Something went wrong. Please submit your information via an alternative method.</p>
-										</div>
-									</div>
-								</details>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="wb-share col-sm-4 col-md-3 wb-init wb-share-inited" data-wb-share="{&quot;lnkClass&quot;: &quot;btn btn-default btn-block&quot;}">
-					<section id="shr-pg0" class="shr-pg mfp-hide modal-dialog modal-content overlay-def">
-						<header class="modal-header">
-							<h2 class="modal-title">Share this page</h2>
-						</header>
-						<div class="modal-body">
-							<ul class="list-unstyled colcount-xs-2">
-								<li><a href="https://www.blogger.com/blog_this.pyra?t=&amp;u=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;n=Campaign%20name%20-%20Canada.ca" class="shr-lnk blogger btn btn-default" rel="noreferrer noopener">Blogger</a></li>
-								<li><a href="https://www.diigo.com/post?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;title=Campaign%20name%20-%20Canada.ca" class="shr-lnk diigo btn btn-default" rel="noreferrer noopener">Diigo</a></li>
-								<li><a href="mailto:?to=&amp;subject=Campaign%20name%20-%20Canada.ca&amp;body=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html%0A" class="shr-lnk email btn btn-default" rel="noreferrer noopener">Email</a></li>
-								<li><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;t=Campaign%20name%20-%20Canada.ca" class="shr-lnk facebook btn btn-default" rel="noreferrer noopener">Facebook</a></li>
-								<li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=&amp;su=Campaign%20name%20-%20Canada.ca&amp;body=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html%0A" class="shr-lnk gmail btn btn-default" rel="noreferrer noopener">Gmail</a></li>
-								<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;title=Campaign%20name%20-%20Canada.ca&amp;ro=false&amp;summary=&amp;source=" class="shr-lnk linkedin btn btn-default" rel="noreferrer noopener">LinkedIn®</a></li>
-								<li><a href="https://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;t=Campaign%20name%20-%20Canada.ca" class="shr-lnk myspace btn btn-default" rel="noreferrer noopener">MySpace</a></li>
-								<li><a href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;media=&amp;description=Campaign%20name%20-%20Canada.ca" class="shr-lnk pinterest btn btn-default" rel="noreferrer noopener">Pinterest</a></li>
-								<li><a href="https://reddit.com/submit?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;title=Campaign%20name%20-%20Canada.ca" class="shr-lnk reddit btn btn-default" rel="noreferrer noopener">reddit</a></li>
-								<li><a href="https://tinyurl.com/create.php?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html" class="shr-lnk tinyurl btn btn-default" rel="noreferrer noopener">TinyURL</a></li>
-								<li><a href="https://www.tumblr.com/share/link?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;name=Campaign%20name%20-%20Canada.ca&amp;description=" class="shr-lnk tumblr btn btn-default" rel="noreferrer noopener">tumblr</a></li>
-								<li><a href="https://twitter.com/intent/tweet?text=Campaign%20name%20-%20Canada.ca&amp;url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html" class="shr-lnk twitter btn btn-default" rel="noreferrer noopener">Twitter</a></li>
-								<li><a href="https://api.whatsapp.com/send?text=Campaign%20name%20-%20Canada.ca%0A%0Ahttp%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html" class="shr-lnk whatsapp btn btn-default" rel="noreferrer noopener">Whatsapp</a></li>
-								<li><a href="https://compose.mail.yahoo.com/?to=&amp;subject=Campaign%20name%20-%20Canada.ca&amp;body=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html%0A" class="shr-lnk yahoomail btn btn-default" rel="noreferrer noopener">Yahoo! Mail</a></li>
-							</ul>
-							<p class="col-sm-12 shr-dscl">No endorsement of any products or services is expressed or implied.</p>
-							<div class="clearfix"></div>
-						</div>
-					</section><a href="#shr-pg0" aria-controls="shr-pg0" class="shr-opn wb-lbx btn btn-default btn-block wb-lbx-inited wb-init"><span class="glyphicon glyphicon-share"></span>Share this page</a>
-				</div>
 				<div class="col-xs-12">
 					<dl id="wb-dtmd">
 						<dt>Date modified:</dt>
-						<dd><time property="dateModified">2017-10-02</time></dd>
+						<dd><time property="dateModified">2023-05-15</dd>
 					</dl>
 				</div>
 			</div>
@@ -877,14 +886,6 @@
 
 
 	<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.dc05643fdb8d0e2b89e5cc3c1d26d1b5.html?origin=http%3A%2F%2Flocalhost%3A4000" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
-
-	<script>
-		$(document).ready(function() {
-			$( "#filteredEventsList" ).on( "wb-updated.wb-tagfilter", function( event ) {
-				$("#eventsList").trigger("redraw.wb-calevt");
-			});
-		});
-	</script>
 </body>
 
 </html>

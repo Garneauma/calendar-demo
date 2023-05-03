@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-	<title>Campaign name - Canada.ca</title>
+	<title>Procurement support for businesses - Event details</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta name="description" content=" ">
 	<link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon" href="./dist/GCWeb/assets/favicon-mobile.png">
@@ -16,28 +16,33 @@
 	<script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline.d73eae5387f08ab9f8b71dcf9d12d391.js"></script>
 	<script charset="utf-8" src="https://platform.twitter.com/js/timeline.ef1e579d99cb7409198460b5a0fa4ac6.js"></script>
 	<style>
-		.cal-month-prev,
-		.cal-month-next {
-			display: none;
+		.event-details .panel-body {
+			padding: 30px;
 		}
 
-		.events-list > li {
-			border-bottom: solid 1px #ccc;
-			padding-bottom: 24px;
+		.event-details dl .hint {
+			font-size: 14px;
+			margin-bottom: 0;
 		}
 
-		.wb-fltr-exclusive > *:not( .wb-fltr-in ) {
-			display: none !important;
+		.event-details dl dt {
+			float: left;
 		}
 
-		.wb-fltr-out {
-			opacity: .5;
+		.event-details dl dt .fa {
+			font-size: 30px;
+			position: relative;
+			top: -2px;
+			width: 40px;
 		}
-		.wb-fltr-out .wb-fltr-fade {
-			font-size: 1em;
+
+		.event-details dl dd {
+			margin-bottom: 24px;
+			overflow: hidden;
 		}
-		.wb-fltr-out :not( .wb-fltr-fade ) {
-			display: none !important;
+
+		.event-details dl dd:last-child {
+			margin-bottom: 0;
 		}
 	</style>
 </head>
@@ -95,10 +100,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<nav class="gcweb-menu wb-init gcweb-menu-inited" typeof="SiteNavigationElement" id="wb-auto-2">
+					<nav class="gcweb-menu wb-init gcweb-menu-inited" typeof="SiteNavigationElement">
 						<h2 class="wb-inv">Menu</h2>
 						<button type="button" aria-haspopup="true" aria-expanded="false" aria-label="Press the SPACEBAR to expand or the escape key to collapse this menu. Use the Up and Down arrow keys to choose a submenu item. Press the Enter or Right arrow key to expand it, or the Left arrow or Escape key to collapse it. Use the Up and Down arrow keys to choose an item on that level and the Enter key to access it."><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
-						<ul role="menu" aria-orientation="vertical" data-ajax-replace="https://www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-3">
+						<ul role="menu" aria-orientation="vertical" data-ajax-replace="https://www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html" class="wb-init wb-data-ajax-replace-inited">
 							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-jobs" aria-expanded="false" href="#">Jobs and the workplace</a>
 								<ul id="gc-mnu-jobs" role="menu" aria-orientation="vertical">
 									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs<span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
@@ -510,273 +515,85 @@
 						</a>
 						<meta property="position" content="1">
 					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+							<span property="name">Business and industry</span>
+						</a>
+						<meta property="position" content="2">
+					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+							<span property="name">Doing business with government</span>
+						</a>
+						<meta property="position" content="3">
+					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+							<span property="name">How to sell to government</span>
+						</a>
+						<meta property="position" content="4">
+					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+							<span property="name">Procurement support for businesses</span>
+						</a>
+						<meta property="position" content="5">
+					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="events-list.html">
+							<span property="name">Find an event</span>
+						</a>
+						<meta property="position" content="6">
+					</li>
 				</ol>
 			</div>
 		</nav>
 	</header>
 
 	<main class="container" property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
-		<h1 id="wb-cont" property="name">Procurement Assistance Canada seminars and events</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsa beatae! Doloribus debitis temporibus cum ab voluptatem ratione assumenda earum, saepe, odit quis nemo vero amet laboriosam, animi iste ipsam nesciunt. Ab sed quidem eum facere quae! At iusto dolor itaque, modi obcaecati impedit, excepturi sequi, ab molestiae dignissimos amet.</p>
-		<section class="wb-tagfilter provisional">
-			<h2><a href="2022-08.html" title="Previous month" class="mrgn-rght-lg"><span class="fa fa-chevron-left"></span><span class="sr-only">Previous month</span></a> September 2022 <a href="#" title="Next month" class="mrgn-lft-lg"><span class="fa fa-chevron-right"></span><span class="sr-only">Next month</span></a></h2>
-			<div class="row">
-				<div class="col-sm-6 col-md-7 col-lg-8">
-					<div class="wb-calevt evt-anchor" data-calevt-src="calendar1">
-						<ul class="list-unstyled events-list" id="filteredEventsList">
-							<li class="cal-disp-onshow" data-wb5-tags="languageFR locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">PAC Info Café</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-09 10:00-04:00">Friday September 9, 2022 | 10:00 AM</time> to <time property="endDate" datetime="2022-09-09 11:00-04:00">11:00 AM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb5-tags="languageFR locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Interested in Doing Business with the Government of Canada ?</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-14 12:00-04:00">Friday September 14, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-09-14 13:00-04:00">1:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb5-tags="languageFR locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Bidding on Opportunities</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-15 13:00-04:00">Friday September 15, 2022 | 1:00 PM</time> to <time property="endDate" datetime="2022-09-15 15:00-04:00">3:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb5-tags="languageFR locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Mythbusting Government Procurement</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-20 10:00-04:00">Friday September 20, 2022 | 10:00 AM</time> to <time property="endDate" datetime="2022-09-20 11:00-04:00">11:00 AM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb5-tags="languageFR locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Interested in Doing Business with the Government of Canada ?</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-21 12:00-04:00">Friday September 21, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-09-21 13:00-04:00">1:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb5-tags="languageBI locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">PAC Info Café</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-22 10:00-04:00">Friday September 22, 2022 | 10:00 AM</time> to <time property="endDate" datetime="2022-09-22 11:00-04:00">11:00 AM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: Bilingual</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb5-tags="languageBI locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Federal business opportunities in R&D, security and defense</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-27 09:00-04:00">Friday September 27, 207 | 9:00 AM</time> to <time property="endDate" datetime="2022-09-27 12:00-04:00">12:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: Bilingual</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb5-tags="languageFR locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Interested in Doing Business with the Government of Canada ?</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-28 12:00-04:00">Friday September 28, 2022 | 12:00 PM</time> to <time property="endDate" datetime="2022-09-28 13:00-04:00">1:00 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-							<li class="cal-disp-onshow" data-wb5-tags="languageFR locationMontreal">
-								<section class="wb-addcal provisional" typeof="Event">
-									<h3 class="h4"><a href="#" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
-									<p class="mrgn-bttm-sm"><i class="fa fa-calendar-alt mrgn-rght-md"></i><time property="startDate" datetime="2022-09-29 10:00-04:00">Friday September 29, 2022 | 10:00 AM</time> to <time property="endDate" datetime="2022-09-29 13:30-04:00">1:30 PM</time></p>
-									<p><span class="mrgn-rght-lg"><i class="fa fa-map-marker-alt mrgn-rght-md"></i><span class="sr-only">Location:</span><span property="location">Montreal</span></span><span property="description"><strong>Language</strong>: French</span></p>
-								</section>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-5 col-lg-4 mrgn-tp-lg">
-					<div id="calendar1" class="cal-cnt-fluid mrgn-bttm-lg"></div>
-					<details open>
-						<summary>
-							<h3 class="h4">Filter options</h3>
-						</summary>
-						<div class="form-group mrgn-bttm-0">
-							<fieldset>
-								<legend class="h5 mrgn-tp-0"><span class="field-name">Language</span></legend>
-								<ul class="list-unstyled">
-									<li class="checkbox">
-										<label for="languageFR">
-											<input type="checkbox" name="language" id="languageFR" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="languageFR"> French
-										</label>
-									</li>
-									<li class="checkbox">
-										<label for="languageBI">
-											<input type="checkbox" name="language" id="languageBI" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="languageBI"> Bilingual
-										</label>
-									</li>
-								</ul>
-							</fieldset>
-						</div>
-						<div class="form-group mrgn-bttm-0">
-							<fieldset>
-								<legend class="h5 mrgn-tp-0"><span class="field-name">Location</span></legend>
-								<ul class="list-unstyled">
-									<li class="checkbox">
-										<label for="locationMontreal">
-											<input type="checkbox" name="location" id="locationMontreal" class="wb-contentfilter-ctrl" aria-controls="filteredEventsList" value="locationMontreal"> Montreal
-										</label>
-									</li>
-								</ul>
-							</fieldset>
-						</div>
-					</details>
-				</div>
+		<hgroup>
+			<p class="h3 mrgn-bttm-sm fnt-nrml text-muted">Procurement support for businesses</p>
+			<h1 id="wb-cont" property="name" class="gc-thickline mrgn-tp-0">Seminar: Bidding on opportunities</h1>
+		</hgroup>
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-lg-7">
+				<p>Would you like to learn more about how to bid? This two-hour webinar is designed for participants who are ready for a more detailed overview of the bidding process and provides key information to help you bid on opportunities, including:</p>
+				<ul>
+					<li>The different types of solicitation documents</li>
+					<li>The main elements of a solicitation document and how to respond to them</li>
+					<li>How bids are evaluated and suppliers are selected</li>
+					<li>How to follow-up after receipt of the bidding process results</li>
+					<li>Best practices, tips and suggestions</li>
+				</ul>
+				<p class="mrgn-tp-lg"><button class="btn btn-primary">Register to participate</button></p>
 			</div>
-		</section>
+			<div class="col-xs-12 col-md-6 col-lg-5">
+				<section class="panel panel-default event-details">
+					<h2 class="wb-inv">Event details</h2>
+					<div class="panel-body">
+						<dl class="mrgn-bttm-0">
+							<dt><span class="sr-only">Date</span><span class="fa fa-calendar-alt"></span></dt>
+							<dd>Wednesday, November 9, 2022</dd>
+							<dt><span class="sr-only">Time</span><span class="fa fa-clock"></span></dt>
+							<dd>10 am - 12 pm EST</dd>
+							<dt><span class="sr-only">Location</span><span class="fa fa-map-marker-alt"></span></dt>
+							<dd>Online<br>
+							<p class="hint">Hosted by Procurement Assistance Canada Ontario region</p></dd>
+							<dt><span class="sr-only">Language</span><span class="fa fa-globe"></span></dt>
+							<dd>English</dd>
+						</dl>
+					</div>
+				</section>
+			</div>
+		</div>
 
 		<footer class="pagedetails">
 			<h2 class="wb-inv">Page details</h2>
 			<div class="row">
-				<div class="col-sm-8 col-md-9 col-lg-9">
-					<div data-ajax-replace="/sites/feedback/ajax/report-problem-en.html" class="wb-init wb-data-ajax-replace-inited" id="wb-auto-12">
-						<div class="row row-no-gutters">
-							<div class="col-sm-9 col-md-6 col-lg-5">
-								<details class="brdr-0">
-									<summary class="btn btn-default text-center">Report a problem on this page</summary>
-									<div class="well row">
-										<div class="gc-rprt-prblm">
-											<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
-												<form action="/sites/feedback/feedback-form-destination.html" id="gc-rprt-prblm-form" class="wb-postback" data-wb-postback="{&quot;success&quot;:&quot;.success-message&quot;,&quot;failure&quot;:&quot;.failure-message&quot;}">
-
-													<input type="hidden" name="externalReferer" value="">
-													<input type="hidden" name="pageTitle" value="">
-													<input type="hidden" name="submissionPage" value="">
-													<input type="hidden" value="en">
-													<input type="hidden" name="pageOwner" value="gc:institutions/">
-													<input name="subject" type="hidden" value="Report a problem or mistake on this page">
-													<fieldset>
-														<legend>
-															<span class="field-name">Please select all that apply:</span>
-														</legend>
-														<div class="checkbox">
-															<label for="problem1">
-																<input name="problem1" id="problem1" type="checkbox" value="Yes">A link, button or video is not working
-															</label>
-															<input name="problem1" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem2">
-																<input name="problem2" id="problem2" type="checkbox" value="Yes">It has a spelling mistake
-															</label>
-															<input name="problem2" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem3">
-																<input name="problem3" id="problem3" type="checkbox" value="Yes">Information is missing
-															</label>
-															<input name="problem3" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem4">
-																<input name="problem4" id="problem4" type="checkbox" value="Yes">Information is outdated or wrong
-															</label>
-															<input name="problem4" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem5">
-																<input name="problem5" id="problem5" type="checkbox" value="Yes">Login error when trying to access an account (e.g. My Service Canada Account)
-															</label>
-															<input name="problem5" type="hidden" value="">
-														</div>
-														<ul>
-															<li class="checkbox">
-																<label for="problem6a">
-																	<input name="problem6" id="problem6a" type="checkbox" value="Yes">GC Key access
-																</label>
-																<input name="problem6" type="hidden" value="">
-															</li>
-															<li class="checkbox">
-																<label for="problem7">
-																	<input name="problem7" id="problem7" type="checkbox" value="Yes">SecureKey Concierge (Banking Credential) access
-																</label>
-																<input name="problem7" type="hidden" value="">
-															</li>
-															<li class="checkbox">
-																<label for="problem8">
-																	<input name="problem8" id="problem8" type="checkbox" value="Yes">Personal Access Code (PAC) problems or EI Access Code (AC) problems
-																</label>
-																<input name="problem8" type="hidden" value="">
-															</li>
-															<li class="checkbox">
-																<label for="problem9">
-																	<input name="problem9" id="problem9" type="checkbox" value="Yes">Social Insurance Number (SIN) validation problems
-																</label>
-																<input name="problem9" type="hidden" value="">
-															</li>
-															<li class="checkbox">
-																<label for="problem10">
-																	<input name="problem10" id="problem10" type="checkbox" value="Yes">Other login error not in this list
-																</label>
-																<input name="problem10" type="hidden" value="">
-															</li>
-														</ul>
-														<div class="checkbox">
-															<label for="problem11">
-																<input name="problem11" id="problem11" type="checkbox" value="Yes">I can't find what I'm looking for
-															</label>
-															<input name="problem11" type="hidden" value="">
-														</div>
-														<div class="checkbox">
-															<label for="problem12">
-																<input name="problem12" id="problem12" type="checkbox" value="Yes">Other issue not in this list
-															</label>
-															<input name="problem12" type="hidden" value="">
-														</div>
-													</fieldset>
-													<button type="submit" class="btn btn-primary">Submit</button>
-												</form>
-
-											</div>
-											<div class="success-message hide">
-												<h3>Thank you for your help!</h3>
-												<p>You will not receive a reply. For enquiries, please <a href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
-											</div>
-											<p class="failure-message hide">Something went wrong. Please submit your information via an alternative method.</p>
-										</div>
-									</div>
-								</details>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="wb-share col-sm-4 col-md-3 wb-init wb-share-inited" data-wb-share="{&quot;lnkClass&quot;: &quot;btn btn-default btn-block&quot;}" id="wb-auto-13">
-					<section id="shr-pg0" class="shr-pg mfp-hide modal-dialog modal-content overlay-def">
-						<header class="modal-header">
-							<h2 class="modal-title">Share this page</h2>
-						</header>
-						<div class="modal-body">
-							<ul class="list-unstyled colcount-xs-2">
-								<li><a href="https://www.blogger.com/blog_this.pyra?t=&amp;u=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;n=Campaign%20name%20-%20Canada.ca" class="shr-lnk blogger btn btn-default" rel="noreferrer noopener">Blogger</a></li>
-								<li><a href="https://www.diigo.com/post?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;title=Campaign%20name%20-%20Canada.ca" class="shr-lnk diigo btn btn-default" rel="noreferrer noopener">Diigo</a></li>
-								<li><a href="mailto:?to=&amp;subject=Campaign%20name%20-%20Canada.ca&amp;body=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html%0A" class="shr-lnk email btn btn-default" rel="noreferrer noopener">Email</a></li>
-								<li><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;t=Campaign%20name%20-%20Canada.ca" class="shr-lnk facebook btn btn-default" rel="noreferrer noopener">Facebook</a></li>
-								<li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=&amp;su=Campaign%20name%20-%20Canada.ca&amp;body=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html%0A" class="shr-lnk gmail btn btn-default" rel="noreferrer noopener">Gmail</a></li>
-								<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;title=Campaign%20name%20-%20Canada.ca&amp;ro=false&amp;summary=&amp;source=" class="shr-lnk linkedin btn btn-default" rel="noreferrer noopener">LinkedIn®</a></li>
-								<li><a href="https://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;t=Campaign%20name%20-%20Canada.ca" class="shr-lnk myspace btn btn-default" rel="noreferrer noopener">MySpace</a></li>
-								<li><a href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;media=&amp;description=Campaign%20name%20-%20Canada.ca" class="shr-lnk pinterest btn btn-default" rel="noreferrer noopener">Pinterest</a></li>
-								<li><a href="https://reddit.com/submit?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;title=Campaign%20name%20-%20Canada.ca" class="shr-lnk reddit btn btn-default" rel="noreferrer noopener">reddit</a></li>
-								<li><a href="https://tinyurl.com/create.php?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html" class="shr-lnk tinyurl btn btn-default" rel="noreferrer noopener">TinyURL</a></li>
-								<li><a href="https://www.tumblr.com/share/link?url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html&amp;name=Campaign%20name%20-%20Canada.ca&amp;description=" class="shr-lnk tumblr btn btn-default" rel="noreferrer noopener">tumblr</a></li>
-								<li><a href="https://twitter.com/intent/tweet?text=Campaign%20name%20-%20Canada.ca&amp;url=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html" class="shr-lnk twitter btn btn-default" rel="noreferrer noopener">Twitter</a></li>
-								<li><a href="https://api.whatsapp.com/send?text=Campaign%20name%20-%20Canada.ca%0A%0Ahttp%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html" class="shr-lnk whatsapp btn btn-default" rel="noreferrer noopener">Whatsapp</a></li>
-								<li><a href="https://compose.mail.yahoo.com/?to=&amp;subject=Campaign%20name%20-%20Canada.ca&amp;body=http%3A%2F%2Flocalhost%3A4000%2Ftemplates%2Fcampaign%2Fcampaign-en.html%0A" class="shr-lnk yahoomail btn btn-default" rel="noreferrer noopener">Yahoo! Mail</a></li>
-							</ul>
-							<p class="col-sm-12 shr-dscl">No endorsement of any products or services is expressed or implied.</p>
-							<div class="clearfix"></div>
-						</div>
-					</section><a href="#shr-pg0" aria-controls="shr-pg0" class="shr-opn wb-lbx btn btn-default btn-block wb-lbx-inited wb-init" id="wb-auto-14"><span class="glyphicon glyphicon-share"></span>Share this page</a>
-				</div>
 				<div class="col-xs-12">
 					<dl id="wb-dtmd">
 						<dt>Date modified:</dt>
-						<dd><time property="dateModified">2017-10-02</time></dd>
+						<dd><time property="dateModified">2023-05-15</dd>
 					</dl>
 				</div>
 			</div>
@@ -831,14 +648,6 @@
 
 
 	<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.dc05643fdb8d0e2b89e5cc3c1d26d1b5.html?origin=http%3A%2F%2Flocalhost%3A4000" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
-
-	<script>
-		$(document).ready(function() {
-			$( "#filteredEventsList" ).on( "wb-updated.wb-tagfilter", function( event ) {
-				$("#eventsList").trigger("redraw.wb-calevt");
-			});
-		});
-	</script>
 </body>
 
 </html>
