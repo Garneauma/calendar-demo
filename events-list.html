@@ -539,10 +539,15 @@
 			<h1 id="wb-cont" property="name" class="gc-thickline mrgn-tp-0">Find an event</h1>
 		</hgroup>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsa beatae! Doloribus debitis temporibus cum ab voluptatem ratione assumenda earum, saepe, odit quis nemo vero amet laboriosam, animi iste ipsam nesciunt. Ab sed quidem eum facere quae! At iusto dolor itaque, modi obcaecati impedit, excepturi sequi, ab molestiae dignissimos amet.</p>
-		<section id="filteredEventsList" class="wb-tagfilter provisional wb-filter mrgn-tp-lg" data-wb-filter='{
+		<section id="filteredEventsList" class="wb-tagfilter wb-paginate provisional wb-filter mrgn-tp-lg" data-wb-filter='{
 			"uiTemplate": "#filteredEventsList",
 			"selector": "article",
 			"section": ".events-list"
+		}'
+		data-wb-paginate='{
+			"itemsPerPage": 5,
+			"section": ".events-list",
+			"selector": "article"
 		}'>
 			<h2 class="wb-inv">Events list</h2>
 			<div class="row">
