@@ -7,7 +7,7 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta name="description" content=" ">
 	<link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon" href="./dist/GCWeb/assets/favicon-mobile.png">
-	<link href="./dist/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" class="wb-init wb-favicon-inited">
+	<link href="./dist/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
 	<link rel="stylesheet" href="./dist/GCWeb/css/theme.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<noscript>
@@ -16,11 +16,6 @@
 	<script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline.d73eae5387f08ab9f8b71dcf9d12d391.js"></script>
 	<script charset="utf-8" src="https://platform.twitter.com/js/timeline.ef1e579d99cb7409198460b5a0fa4ac6.js"></script>
 	<style>
-		.events-list>li {
-			border-bottom: solid 1px #ccc;
-			padding-bottom: 24px;
-		}
-
 		details fieldset legend {
 			font-size: 20px;
 		}
@@ -38,7 +33,7 @@
 
 <body vocab="http://schema.org/" typeof="WebPage">
 	<nav>
-		<ul id="wb-tphp" class="wb-init wb-disable-inited">
+		<ul id="wb-tphp">
 			<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
 			<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to About this site</a></li>
 			<li class="wb-slc"><a class="wb-sl" href="?wbdisable=true" rel="alternate">Switch to basic HTML version</a></li>
@@ -48,452 +43,83 @@
 	<header>
 		<div id="wb-bnr" class="container">
 			<div class="row">
+	
 				<section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
 					<h2 class="wb-inv">Language selection</h2>
-					<ul class="list-inline mrgn-bttm-0">
-						<li>
-							<a lang="fr" hreflang="fr" href="campaign-fr.html">
-								<span class="hidden-xs">Français</span>
-								<abbr title="Français" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
-							</a>
-						</li>
-					</ul>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="list-inline mrgn-bttm-0">
+								<li>
+									<a lang="fr" href="/fr.html">
+										<span class="hidden-xs">Fran&ccedil;ais</span>
+										<abbr title="Fran&ccedil;ais" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</section>
-				<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-					<a href="https://wet-boew.github.io/GCWeb/" property="url">
-						<img src="./dist/GCWeb/assets/sig-blk-en.svg" alt="Government of Canada" property="logo"><span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span></span>
-					</a>
-					<meta property="name" content="Government of Canada">
-					<meta property="areaServed" typeof="Country" content="Canada">
-					<link property="logo" href="./dist/GCWeb/assets/wmms-blk.svg">
+				<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" resource="#wb-publisher" typeof="GovernmentOrganization">
+					<link href="/content/canadasite/en.html" property="url" />
+					<img src="dist/GCWeb/assets/sig-blk-en.svg" alt="Government of Canada" property="logo" />
+					<span class="wb-inv"> /
+						<span lang="fr">Gouvernement du Canada</span>
+					</span>
+					<meta property="name" content="Government of Canada" />
+					<meta property="areaServed" typeof="Country" content="Canada" />
+					<link property="logo" href="dist/GCWeb/assets/assets/wmms-blk.svg" />
 				</div>
 				<section id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
 					<h2>Search</h2>
-					<form action="#" method="post" name="cse-search-box" role="search">
+					<form action="/en/sr/srb.html" method="get" name="cse-search-box" role="search">
 						<div class="form-group wb-srch-qry">
 							<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
-							<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
-							<datalist id="wb-srch-q-ac"></datalist>
+							<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca" />
+							<datalist id="wb-srch-q-ac">
+							</datalist>
 						</div>
 						<div class="form-group submit">
-							<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub">
-								<span class="glyphicon-search glyphicon"></span>
-								<span class="wb-inv">Search</span>
-							</button>
+							<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
 						</div>
 					</form>
 				</section>
 			</div>
 		</div>
-		<hr>
+		<hr />
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<nav class="gcweb-menu wb-init gcweb-menu-inited" typeof="SiteNavigationElement">
+				<div class="col-md-8">
+					<nav class="gcweb-menu" typeof="SiteNavigationElement">
 						<h2 class="wb-inv">Menu</h2>
-						<button type="button" aria-haspopup="true" aria-expanded="false" aria-label="Press the SPACEBAR to expand or the escape key to collapse this menu. Use the Up and Down arrow keys to choose a submenu item. Press the Enter or Right arrow key to expand it, or the Left arrow or Escape key to collapse it. Use the Up and Down arrow keys to choose an item on that level and the Enter key to access it."><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
-						<ul role="menu" aria-orientation="vertical" data-ajax-replace="https://www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html" class="wb-init wb-data-ajax-replace-inited">
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-jobs" aria-expanded="false" href="#">Jobs and the workplace</a>
-								<ul id="gc-mnu-jobs" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs<span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs/opportunities.html">Find a job</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs/training.html">Training</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/business-management">Hiring and managing employees</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/start-business">Starting a business</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs/workplace.html">Workplace standards</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/pensions.html">Pensions and retirement</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/ei.html">Employment Insurance benefits and leave</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-jobs-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-jobs-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/ei-roe/access-roe.html">View your Records of Employment</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/services/sin.html">Apply for a Social Insurance Number (SIN)</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/services/foreign-workers.html">Hire a temporary foreign worker</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html">Immigrate as a skilled worker</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-cit" aria-expanded="false" href="#">Immigration and citizenship</a>
-								<ul id="gc-mnu-cit" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration<span class="hidden-xs hidden-sm"> and citizenship</span><span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application.html">My application</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html">Visit</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html">Immigrate</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html">Work</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html">Study</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html">Citizenship</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants.html">New immigrants</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians.html">Canadians</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html">Refugees and asylum</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/immigration-citizenship/enforcement-violations.html">Enforcement and violations</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-cit-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-cit-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html">Sign in or create an account to apply online</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-status.html">Check your application status</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html">Check application processing times</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides.html">Find an application form</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.cic.gc.ca/english/information/fees/index.asp">Pay your fees</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.cic.gc.ca/english/visit/visas.asp">Find out if you need an eTA or a visa to visit Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.cic.gc.ca/english/helpcentre/index-featured-can.asp">Have questions? Find answers in the Help Centre</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-travel" aria-expanded="false" href="#">Travel and tourism</a>
-								<ul id="gc-mnu-travel" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://travel.gc.ca/">Travel<span class="hidden-xs hidden-sm"> and tourism</span><span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/travelling/advisories">Travel advice and advisories</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/travel-covid">COVID-19: Travel, testing and borders</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html?outside">Visit Canada</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/travelling">Travel outside Canada</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/air">Air travel</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/returning">Return to Canada</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html">Canadian passports and travel documents</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/canadian-tourism">Canadian attractions, events and experiences</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/assistance/ask-travel">Ask travel</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/assistance">Assistance abroad</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/stay-connected">Stay connected</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-travel-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-travel-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/travel-covid/travel-restrictions/covid-vaccinated-travellers-entering-canada">COVID-19 vaccinated travellers entering Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/arrivecan.html">Use ArriveCAN to enter Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-covid-19-proof-vaccination/get-proof.html">Canadian of COVID-19 Proof vaccination for travel</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/travel-covid/travel-restrictions/domestic-travel">COVID-19 Boarding flights and trains in Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.cbsa-asfc.gc.ca/prog/nexus/application-demande-eng.html">Apply for NEXUS</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/travelling/registration">Register as a Canadian abroad</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/travelling/documents/travel-insurance">Travel insurance</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-biz" aria-expanded="false" href="#">Business and industry</a>
-								<ul id="gc-mnu-biz" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business.html">Business<span class="hidden-xs hidden-sm"> and industry</span><span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/start.html">Starting a business</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/grants.html">Business grants and financing</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/taxes.html">Business taxes</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/federal-corporations.html">Federal corporations</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/hire.html">Hiring and managing employees</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/trade.html">International trade and investment</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/permits.html">Permits, licences and regulations</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/doing-business.html">Doing business with government</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science/innovation.html">R&amp;D and innovation</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/research.html">Research and business intelligence</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/ip.html">Intellectual property and copyright</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/maintaingrowimprovebusiness.html">Maintaining your business</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/protecting.html">Protecting your business</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/bankruptcy.html">Insolvency for business</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-biz-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-biz-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/fdrlCrpSrch.html?locale=en_CA">Find a corporation</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.cbsa-asfc.gc.ca/prog/manif/portal-portail-eng.html">Report your imported goods</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/home?lang=eng">Search for trademarks</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2018/html/tblmod-1-eng.html">Review custom tariffs for importing goods</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.ic.gc.ca/opic-cipo/cpd/eng/introduction.html">Find a patent</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.cbsa-asfc.gc.ca/comm-eng.html">Import and export from Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://ic.gc.ca/eic/site/cd-dgc.nsf/eng/h_cs03922.html">Name a business</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/hm.html?locale=en_CA">Make changes to your corporation (Online Filing Centre)</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-benny" aria-expanded="false" href="#">Benefits</a>
-								<ul id="gc-mnu-benny" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits.html">Benefits<span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/ei.html">Employment Insurance benefits and leave</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/family.html">Family and caregiving benefits</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/publicpensions.html">Public pensions</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/education.html">Student aid and education planning</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/housing.html">Housing benefits</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/disability.html">Disability benefits</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.canada.ca/en/services/benefits/audience.html">Benefits by audience</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/calendar.html">Benefits payment dates</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=en-CA">Benefits finder</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/notify-government-death.html">Notify the government of a death</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-benny-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-benny-sub" role="menu" aria-orientation="vertical">
-
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/ei/ei-regular-benefit.html">Apply for Employment Insurance</a></li>
-
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans.html">Apply for student loans and grants</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/government/sign-in-online-account.html">Sign in to a Government of Canada online account</a></li>
-
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.tpsgc-pwgsc.gc.ca/recgen/txt/depot-deposit-eng.html">Sign up for direct deposit</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/ei/ei-internet-reporting.html">Submit your EI report</a></li>
-
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.cra-arc.gc.ca/bnfts/clcltr/cfbc-eng.html">Child and family benefits calculators</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-health" aria-expanded="false" href="#">Health</a>
-								<ul id="gc-mnu-health" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health.html">Health<span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health/food-nutrition.html">Food and nutrition</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/public-health/services/diseases.html">Diseases and conditions</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/public-health/topics/immunization-vaccines.html">Vaccines and immunization</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health/drug-health-products.html">Drug and health products</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health/product-safety.html">Product safety</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health/health-risks-safety.html">Health risks and safety</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health/healthy-living.html">Healthy living</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health/aboriginal-health.html">Indigenous health</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health/health-system-services.html">Health system and services</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health/science-research-data.html">Science, research and data</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-health-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-health-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/industry-licensees-applicants/licensed-cultivators-processors-sellers.html">Licensed cultivators, processors and seller of cannabis</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://healthycanadians.gc.ca/recall-alert-rappel-avis/index-eng.php">Food and product recalls and safety alerts</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/health-canada/services/canada-food-guides.html">Canada's food guide</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-taxes" aria-expanded="false" href="#">Taxes</a>
-								<ul id="gc-mnu-taxes" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes.html">Taxes<span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes/income-tax.html">Income tax</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html">GST/HST</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html">Payroll</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes/business-number.html">Business number</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html">Savings and pension plans</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes/child-and-family-benefits.html">Tax credits and benefits for individuals</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes/excise-taxes-duties-and-levies.html">Excise taxes, duties, and levies</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes/charities.html">Charities and giving</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-taxes-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-taxes-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">My Account</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account.html">My Business Account</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/gst-hst-netfile.html">File a GST/HST return (NETFILE)</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/make-a-payment-canada-revenue-agency.html">Make a payment to the Canada Revenue Agency</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/benefit-payment-dates.html">Find the next benefit payment date</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-enviro" aria-expanded="false" href="#">Environment and natural resources</a>
-								<ul id="gc-mnu-enviro" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment.html">Environment<span class="hidden-xs hidden-sm"> and natural resources</span><span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment/weather.html">Weather, climate and hazards</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment/energy.html">Energy</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment/natural-resources.html">Natural resources</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://agriculture.canada.ca/en/agriculture-and-environment">Agriculture and the environment</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment/fisheries.html">Fisheries</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment/wildlife-plants-species.html">Wildlife, plants and species</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment/pollution-waste-management.html">Pollution and waste management</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment/conservation.html">Environmental conservation and protection</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-enviro-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-enviro-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://weather.gc.ca/canada_e.html">Local weather forecast</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.nrcan.gc.ca/energy/efficiency/transportation/20996">Fuel-efficient vehicles</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.nrcan.gc.ca/homes">Home energy efficiency</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/environment-climate-change/services/species-risk-public-registry.html">Species at risk</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/environment-climate-change/services/seasonal-weather-hazards.html">Prepare for severe weather</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-defence" aria-expanded="false" href="#">National security and defence</a>
-								<ul id="gc-mnu-defence" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence.html"><span class="hidden-xs hidden-sm">National security and defence</span><span class="visible-xs-inline visible-sm-inline">Defence: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence/nationalsecurity.html">National security</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence/caf.html">Canadian Armed Forces</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence/defence-equipment-purchases-upgrades.html">Defence equipment purchases and upgrades</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/transportation-security.html">Transportation security</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence/securingborder.html">Securing the border</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence/cybersecurity.html">Cyber security</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence/jobs.html">Jobs in national security and defence</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/government/publicservice/benefitsmilitary.html">Services and benefits for the military</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-defence-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-defence-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://forces.ca/en/careers/">Jobs in the Canadian Armed Forces</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/insignia-flags/ranks/rank-appointment-insignia.html">Military ranks</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence/caf/equipment.html">Defence equipment</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.publicsafety.gc.ca/cnt/ntnl-scrt/cntr-trrrsm/lstd-ntts/crrnt-lstd-ntts-en.aspx">Current list of terrorist entities</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/department-national-defence/services/cadets-junior-canadian-rangers/cadets/join-us.html">Join the Cadet Program</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://dgpaapp.forces.gc.ca/en/canada-defence-policy/index.asp">Canada's Defence policy</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-culture" aria-expanded="false" href="#">Culture, history and sport</a>
-								<ul id="gc-mnu-culture" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture.html">Culture<span class="hidden-xs hidden-sm">, history and sport</span><span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/canadian-heritage/services/funding.html">Funding - Culture, history and sport</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/events-celebrations-commemorations.html">Events, celebrations and commemorations</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/cultural-attractions.html">Cultural landmarks and attractions</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/canadian-identity-society.html">Canadian identity and society</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/sport.html">Sport</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/history-heritage.html">History and heritage</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/arts-media.html">Arts and media</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/cultural-youth-programs.html">Cultural youth programs</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/cultural-trade-investment.html">Cultural trade and investment</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-culture-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-culture-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial">Visit the Canadian Virtual War Memorial</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/canadian-identity-society/anthems-symbols.html">Anthems and symbols of Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://crtc.gc.ca/eng/8045/d2018.htm">Find a CRTC decision</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.bac-lac.gc.ca/eng/search/Pages/ancestors-search.aspx">Research your family history</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.bac-lac.gc.ca/eng/census/Pages/census.aspx">Search census records</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture/cultural-attractions/attractions-canada-capital.html">Landmarks and attractions in Canada's capital</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-policing" aria-expanded="false" href="#">Policing, justice and emergencies</a>
-								<ul id="gc-mnu-policing" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing.html">Policing<span class="hidden-xs hidden-sm">, justice and emergencies</span><span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing/police/index.html">Policing</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing/justice.html">Justice</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing/emergencies.html">Emergencies</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing/corrections.html">Corrections</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing/parole.html">Parole, record suspension, expungement and clemency</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing/victims.html">Victims of crime</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-policing-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-policing-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.rcmp-grc.gc.ca/cfp-pcaf/online_en-ligne/index-eng.htm">Apply/Renew a firearms licence</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.rcmp-grc.gc.ca/en/criminal-record-checks">Get a criminal records check</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/parole-board/services/record-suspensions/official-pbc-application-guide-and-forms.html">Apply for a criminal record suspension</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.getprepared.gc.ca/cnt/hzd/drng-en.aspx">What to do during an emergency</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing/police/community-safety-policing/impaired-driving.html">Know the law on impaired driving</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing/police/help-solve-crime.html">Help solve a crime</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-trans" aria-expanded="false" href="#">Transport and infrastructure</a>
-								<ul id="gc-mnu-trans" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/transport.html">Transport<span class="hidden-xs hidden-sm"> and infrastructure</span><span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/aviation.html">Aviation</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/marine.html">Marine transportation</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/road.html">Road transportation</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/rail.html">Rail transportation</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/dangerous-goods.html">Dangerous goods</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/infrastructure.html">Infrastructure</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-trans-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-trans-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/aviation/drone-safety.html">Drone safety</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://tc.canada.ca/en/aviation/aviation-security/what-not-bring-plane">What you can't bring on an airplane</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/eng/marinesafety/oep-vesselreg-menu-728.htm">Register your vessel</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/en/services/road/child-car-seat-safety.html">Child car seat safety</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/eng/tdg/clear-tofc-211.htm">Transporting dangerous goods - Regulations</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.tc.gc.ca/eng/acts-regulations/regulations-sor96-433.htm">Canadian Aviation Regulations</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-canworld" aria-expanded="false" href="#">Canada and the world</a>
-								<ul id="gc-mnu-canworld" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world<span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/offices-bureaux/index.aspx?lang=eng">International offices and emergency contacts</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/study_work_travel-etude_travail_voyage/index.aspx?lang=eng">Study, work and travel worldwide</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/country-pays/index.aspx?lang=eng">Information by countries and territories</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://international.gc.ca/world-monde/stories-histoires/index.aspx?lang=eng">Stories</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/international_relations-relations_internationales/index.aspx?lang=eng">International relations</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/issues_development-enjeux_developpement/index.aspx?lang=eng">Global issues and international assistance</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/funding-financement/index.aspx?lang=eng">Funding for international initiatives</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.canada.ca/en/services/business/trade/index.html">International trade and investment</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-canworld-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-canworld-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.international.gc.ca/world-monde/covid-19/index.aspx?lang=eng">COVID-19: Trade, foreign affairs, international trade and development</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://educanada.ca/scholarships-bourses/non_can/index.aspx?lang=eng">Find a Canadian scholarship as an international student</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://treaty-accord.gc.ca/index.aspx">International treaties signed by Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://educanada.ca/index.aspx?lang=eng">Find international study or research opportunities in Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/assistance/embassies-consulates">Contact an embassy or consulate</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/protocol-protocole/reps.aspx?lang=eng">Contact a foreign representative in Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.international.gc.ca/gac-amc/about-a_propos/services/authentication-authentification/step-etape-1.aspx?lang=eng">Authenticate a document</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-money" aria-expanded="false" href="#">Money and finances</a>
-								<ul id="gc-mnu-money" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance.html"><span class="hidden-xs hidden-sm">Money and finances</span><span class="visible-xs-inline visible-sm-inline">Finance: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/manage.html">Managing your money</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/debt.html">Debt and borrowing</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/savings.html">Savings and investments</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/educationfunding.html">Education funding</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/pensions.html">Pensions and retirement</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/fraud.html">Protection from frauds and scams</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/tools.html">Financial tools and calculators</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/financial-consumer-agency/services/financial-literacy-programs.html">Financial literacy programs</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/consumer-affairs.html">Consumer affairs</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance/bankruptcy.html">Insolvency</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/government/system/finances.html">Government finances</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/grants.html">Business grants and financing</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/permits/federallyregulatedindustrysectors/financialservicesregulation.html">Financial and money services regulation</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-money-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-money-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.ic.gc.ca/app/scr/bsf-osb/ins/login.html?lang=eng">Find a bankruptcy or insolvency record</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs/education/student-financial-aid/student-loan.html">Student loans</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.tpsgc-pwgsc.gc.ca/recgen/txt/depot-deposit-eng.html">Set up direct deposit</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/financial-consumer-agency/services/mortgages.html">Mortgages</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/financial-consumer-agency/services/credit-reports-score.html">Credit report and scores</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://itools-ioutils.fcac-acfc.gc.ca/BC-CB/NetInc-RevNet-eng.aspx">Make a budget</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html">Rates and contribution limits</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li role="presentation"> <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-science" aria-expanded="false" href="#">Science and innovation</a>
-								<ul id="gc-mnu-science" role="menu" aria-orientation="vertical">
-									<li role="presentation"> <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science.html">Science<span class="hidden-xs hidden-sm"> and innovation</span><span class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-									<li role="separator"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science/researchfunding.html">Research funding and awards</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science/sciencesubjects.html">Science subjects</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science/open-data.html">Open data, statistics and archives</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science/institutes.html">Research institutes and facilities</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science/innovation.html">R&amp;D and innovation</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business/ip.html">Intellectual property and copyright</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science/scientistsdirectory.html">Directory of scientists and research professionals</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science/educationalresources.html">Science education resources</a></li>
-									<li role="separator" aria-orientation="vertical"></li>
-									<li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-science-sub" aria-expanded="true">Most requested</a>
-										<ul id="gc-mnu-science-sub" role="menu" aria-orientation="vertical">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.nrc-cnrc.gc.ca/eng/publications/codes_centre/2015_national_building_code.html">National building codes</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.nrc-cnrc.gc.ca/eng/services/time/web_clock.html#tzpanel-4">Official time across Canada</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.nrc-cnrc.gc.ca/eng/services/sunrise/index.html">Check sunrise and sunset times</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.nrc-cnrc.gc.ca/eng/irap/services/financial_assistance.html">Grants for technological innovation (IRAP)</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="https://science-libraries.canada.ca/eng/home/">Federal Science Library</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="http://asc-csa.gc.ca/eng/astronomy/auroramax/hd-480.asp">Live view of northern lights cam</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+						<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+						<ul role="menu" aria-orientation="vertical">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/">Travel and tourism</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
 						</ul>
 					</nav>
 				</div>
+				<div class="col-xs-offset-6 col-xs-6 col-md-offset-0 col-md-4">
+					<section id="wb-so">
+						<h2 class="wb-inv">Sign in</h2>
+						<a class="btn btn-primary" href="/en/government/sign-in-online-account.html"><span class="visible-xs">Sign in</span><span class="hidden-xs">Sign in</span></a>
+					</section>
+				</div>
 			</div>
 		</div>
+
 		<nav id="wb-bc" property="breadcrumb">
 			<h2>You are here:</h2>
 			<div class="container">
@@ -538,7 +164,8 @@
 			<p class="h3 mrgn-bttm-sm fnt-nrml text-muted">Procurement support for businesses</p>
 			<h1 id="wb-cont" property="name" class="gc-thickline mrgn-tp-0">Find an event</h1>
 		</hgroup>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsa beatae! Doloribus debitis temporibus cum ab voluptatem ratione assumenda earum, saepe, odit quis nemo vero amet laboriosam, animi iste ipsam nesciunt. Ab sed quidem eum facere quae! At iusto dolor itaque, modi obcaecati impedit, excepturi sequi, ab molestiae dignissimos amet.</p>
+		<p>Interested in selling your goods or services to the federal government? Not sure where to start?</p>
+		<p>Procurement Assistance Canada participates in a variety of events and offers free seminars to businesses interested in learning about the procurement process and how to sell goods and services to the Government of Canada.</p>
 		<section id="filteredEventsList" class="wb-tagfilter wb-paginate provisional wb-filter mrgn-tp-lg" data-wb-filter='{
 			"uiTemplate": "#filteredEventsList",
 			"selector": "article",
@@ -551,229 +178,46 @@
 		}'>
 			<h2 class="wb-inv">Events list</h2>
 			<div class="row">
-				<div class="col-sm-6 col-md-7 col-lg-8">
-					<div class="row">
-						<div class="col-xs-6">
-							<p class="wb-fltr-info"><b data-nbitem></b> events</p>
-						</div>
-						<div class="col-xs-6">
-							<p class="text-right text-muted mrgn-tp-sm"><small><i class="mrgn-rght-sm">Sorted by date ascending</i> <span class="fa fa-arrow-down"></span></small></p>
-						</div>
-					</div>
-					<div class="events-list wb-tagfilter-items">
-						<article data-wb-tags="language__english format__online month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Friday, August 5, 2022, 12 pm - 1 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Online</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english location__vancouver format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Bidding on Opportunities</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Wednesday, August 10, 2022, 2 pm - 3:30 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Vancouver</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english location__ottawa format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing business with the Government of Canada (Webinar)</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Thursday, August 11, 2022, 2 pm - 3:30 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english format__online month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Friday, August 12, 2022, 12 pm - 1 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Online</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english location__ottawa format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Bidding on opportunities (Webinar)</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Thursday, August 18, 2022, 2 pm - 3:30 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english format__online month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Friday, August 19, 2022, 12 pm - 1 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Online</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__french location__ottawa format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Workshop to register in the Supplier Registration Information (SRI) system and in the Indigenous Business Directory (IBD) for Indigenous-led businesses</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Thursday, August 25, 2022, 9:30 am - 11 am EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>French</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english location__ottawa format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Workshop to register in the Supplier Registration Information (SRI) system and in the Indigenous Business Directory (IBD) for Indigenous-led businesses</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Thursday, August 25, 2022, 1 pm - 2:30 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__french location__montreal format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Thursday, August 25, 2022, 1:30 pm - 3 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Montreal</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>French</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english location__vancouver format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Thursday, August 25, 2022, 2 pm - 3:30 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Vancouver</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english format__online month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Friday, August 26, 2022, 12 pm - 1:30 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Online</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english location__toronto format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Mythbusting Federal Government Procurement and Overview of Innovation for Defence, Excellence and Security (IDEaS)</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Tuesday, August 30, 2022, 10 am - 11 am EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Toronto</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__french location__montreal format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Register as supplier and find opportunities on BuyAndSell.gc.ca</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Tuesday, August 30, 2022, 1:30 pm - 3 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Montreal</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>French</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-						<article data-wb-tags="language__english location__toronto format__inperson month__august">
-							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Federal Procurement Virtual Drop-in Café</a></h3>
-							<dl class="clearfix event-details">
-								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
-								<dd><b>Wednesday, August 31, 2022, 3 pm - 4 pm EST</b><br></dd>
-								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
-								<dd class="mrgn-rght-md"><b>Toronto</b></dd>
-								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
-								<dd><b>English</b></dd>
-							</dl>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
-						</article>
-					</div>
-					<!-- <nav aria-label="Page navigation">
-						<ul class="pagination">
-							<li class="active"><a href="#"><b>1</b><span class="sr-only"> (current)</span></a></li>
-							<li><a href="#"><b>2</b></a></li>
-							<li><a href="#"><b>3</b></a></li>
-							<li><a href="#"><b>4</b></a></li>
-							<li><a href="#"><b>5</b></a></li>
-							<li><a href="#"><b>6</b></a></li>
-							<li><a href="#"><b>7</b></a></li>
-							<li><a href="#"><b>8</b></a></li>
-							<li><a href="#"><b>9</b></a></li>
-							<li><a href="#"><b>10</b></a></li>
-							<li>
-								<a href="#"><b>Next</b><small aria-hidden="true" class="mrgn-lft-sm"><b><span class="fa fa-arrow-right"></span></small></b></a>
-							</li>
-						</ul>
-					</nav> -->
-				</div>
-				<div class="col-sm-6 col-md-5 col-lg-4">
-					<details open>
+				<div class="col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-8">
+					<details open class="provisional wb-details-close mrgn-bttm-lg nojs-hide" data-breakpoint="md">
 						<summary>
 							<h3 class="h4">Filter events</h3>
 						</summary>
 						<div class="form-group">
-							<label for="filterSearch">Search</label>
+							<label for="filterSearch">Contains</label>
 							<input type="search" id="filterSearch" class="form-control full-width" placeholder="Type a keyword, a day, or a month">
 						</div>
-						<div class="form-group">
-							<label for="filterMonth">Month</label>
-							<select name="filterMonth" id="filterMonth" class="form-control full-width wb-tagfilter-ctrl">
-								<option value="">Any</option>
-								<option value="month__january">January</option>
-								<option value="month__february">February</option>
-								<option value="month__march">March</option>
-								<option value="month__april">April</option>
-								<option value="month__may">May</option>
-								<option value="month__june">June</option>
-								<option value="month__july">July</option>
-								<option value="month__august">August</option>
-								<option value="month__september">September</option>
-								<option value="month__october">October</option>
-								<option value="month__november">November</option>
-								<option value="month__december">December</option>
-							</select>
+						<div class="row">
+							<div class="col-xs-5">
+								<div class="form-group">
+									<label for="filterYear">Year</label>
+									<select name="filterYear" id="filterYear" class="form-control full-width wb-tagfilter-ctrl">
+										<option value="">Any</option>
+										<option value="year__2023">2023</option>
+										<option value="year__2024">2024</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-7">
+								<div class="form-group">
+									<label for="filterMonth">Month</label>
+									<select name="filterMonth" id="filterMonth" class="form-control full-width wb-tagfilter-ctrl">
+										<option value="">Any</option>
+										<option value="month__january">January</option>
+										<option value="month__february">February</option>
+										<option value="month__march">March</option>
+										<option value="month__april">April</option>
+										<option value="month__may">May</option>
+										<option value="month__june">June</option>
+										<option value="month__july">July</option>
+										<option value="month__august">August</option>
+										<option value="month__september">September</option>
+										<option value="month__october">October</option>
+										<option value="month__november">November</option>
+										<option value="month__december">December</option>
+									</select>
+								</div>
+							</div>
 						</div>
 						<div class="form-group mrgn-bttm-0">
 							<fieldset class="p-0">
@@ -794,10 +238,21 @@
 							<label for="filterLocation">Location</label>
 							<select name="filterLocation" id="filterLocation" class="form-control full-width wb-tagfilter-ctrl">
 								<option value="">Any</option>
-								<option value="location__montreal">Montreal</option>
-								<option value="location__ottawa">Ottawa</option>
-								<option value="location__toronto">Toronto</option>
-								<option value="location__vancouver">Vancouver</option>
+								<option value="location__ca">Canada-wide</option>
+								<option value="location__al">Alberta</option>
+								<option value="location__bc">British Columbia</option>
+								<option value="location__ma">Manitoba</option>
+								<option value="location__ncr">National Capital Region - NCR</option>
+								<option value="location__nb">New Brunswick</option>
+								<option value="location__nl">Newfoundland and Labrador</option>
+								<option value="location__ns">Nova Scotia</option>
+								<option value="location__nt">Northwest Territories</option>
+								<option value="location__nu">Nunavut</option>
+								<option value="location__on">Ontario - except NCR</option>
+								<option value="location__pei">Prince Edward Island</option>
+								<option value="location__qc">Quebec - except NCR</option>
+								<option value="location__sa">Saskatchewan</option>
+								<option value="location__yu">Yukon</option>
 							</select>
 						</div>
 						<div class="form-group mrgn-bttm-0">
@@ -826,6 +281,186 @@
 							</fieldset>
 						</div>
 					</details>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 col-lg-8 col-lg-pull-4 mrgn-tp-md">
+					<div class="row">
+						<div class="col-xs-6">
+							<p class="wb-fltr-info nojs-hide"><b data-nbitem></b> events</p>
+						</div>
+						<div class="col-xs-6">
+							<p class="text-right text-muted mrgn-tp-sm"><small><i class="mrgn-rght-sm">Sorted by date ascending</i> <span class="fa fa-arrow-down"></span></small></p>
+						</div>
+					</div>
+					<div class="events-list wb-tagfilter-items">
+						<article data-wb-tags="year__2023 language__english format__online month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Friday, August 5, 2023, 12 pm - 1 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Online</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english location__bc format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Bidding on Opportunities</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Wednesday, August 10, 2023, 2 pm - 3:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Vancouver</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english location__ncr format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing business with the Government of Canada (Webinar)</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 11, 2023, 2 pm - 3:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english format__online month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Friday, August 12, 2023, 12 pm - 1 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Online</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english location__ncr format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Bidding on opportunities (Webinar)</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 18, 2023, 2 pm - 3:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english format__online month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Friday, August 19, 2023, 12 pm - 1 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Online</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__french location__ncr format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Workshop to register in the Supplier Registration Information (SRI) system and in the Indigenous Business Directory (IBD) for Indigenous-led businesses</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 25, 2023, 9:30 am - 11 am EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>French</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english location__ncr format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Workshop to register in the Supplier Registration Information (SRI) system and in the Indigenous Business Directory (IBD) for Indigenous-led businesses</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 25, 2023, 1 pm - 2:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Ottawa</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__french location__qc format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 25, 2023, 1:30 pm - 3 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Montreal</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>French</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english location__bc format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Doing Business with the Government of Canada</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Thursday, August 25, 2023, 2 pm - 3:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Vancouver</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english format__online month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Ask PAC Anything!</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Friday, August 26, 2023, 12 pm - 1:30 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Online</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__english location__on format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Mythbusting Federal Government Procurement and Overview of Innovation for Defence, Excellence and Security (IDEaS)</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Tuesday, August 30, 2023, 10 am - 11 am EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Toronto</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2023 language__french location__qc format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Register as supplier and find opportunities on BuyAndSell.gc.ca</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Tuesday, August 30, 2023, 1:30 pm - 3 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Montreal</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>French</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+						<article data-wb-tags="year__2024 language__english location__on format__inperson month__august" class="brdr-bttm pb-4 mrgn-tp-lg">
+							<h3 class="h4"><a href="event-details.html" rel="external" property="name">Federal Procurement Virtual Drop-in Café</a></h3>
+							<dl class="clearfix event-details">
+								<dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="sr-only">Date and time</span></dt>
+								<dd><b>Wednesday, August 31, 2024, 3 pm - 4 pm EST</b><br></dd>
+								<dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="sr-only">Location</span></dt>
+								<dd class="mrgn-rght-md"><b>Toronto</b></dd>
+								<dt><i class="fa fa-globe"></i><span class="sr-only">Language</span></dt>
+								<dd><b>English</b></dd>
+							</dl>
+							<p class="mrgn-bttm-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloremque dolor perspiciatis! Laudantium expedita dolorem ut quibusdam fugiat, vel quo nisi at accusamus voluptatem quasi placeat corrupti hic molestiae natus qui mollitia, nihil praesentium incidunt, nesciunt non.</p>
+						</article>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -885,7 +520,7 @@
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous"></script>
-	<script src="./dist/wet-boew/js/wet-boew.min.js"></script><span id="wb-rsz" class="wb-init">&nbsp;</span>
+	<script src="./dist/wet-boew/js/wet-boew.min.js"></script><span id="wb-rsz">&nbsp;</span>
 	<script src="./dist/GCWeb/js/theme.js"></script>
 	<script src="./dist/wet-boew/js/i18n/en.js"></script>
 
