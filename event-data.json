@@ -49,8 +49,8 @@
             "text": "Alberta"
         },
         {
-            "value": "location_ontario–exceptncr",
-            "text": "Ontario – except NCR"
+            "value": "location_ontario-exceptncr",
+            "text": "Ontario - except NCR"
         },
         {
             "value": "location_manitoba",
@@ -65,12 +65,8 @@
             "text": "Yukon"
         },
         {
-            "value": "location_alberta|alberta",
-            "text": "Alberta|Alberta"
-        },
-        {
-            "value": "location_britishcolumbia|colombie-britannique",
-            "text": "British Columbia|Colombie-Britannique"
+            "value": "location_britishcolumbia",
+            "text": "British Columbia"
         }
     ],
     "events": {
@@ -174,10 +170,10 @@
             "pageid": "4324222232432",
             "eventLanguage": "English",
             "eventDelivery": "In-person, Online",
-            "locations": "Alberta, British Columbia, Ontario – except NCR",
+            "locations": "Alberta, British Columbia, Ontario - except NCR",
             "multiDayEvent": true,
             "noOfDays": 3,
-            "tags": "title_askusanything timezone_ast city_online id_4324222232432 month_april year_2023 language_english delivery_in-person delivery_online location_alberta location_britishcolumbia location_ontario–exceptncr"
+            "tags": "title_askusanything timezone_ast city_online id_4324222232432 month_april year_2023 language_english delivery_in-person delivery_online location_alberta location_britishcolumbia location_ontario-exceptncr"
         }
     },
     "pastEvents": [],
@@ -199,18 +195,18 @@
             "endDay": "Tuesday",
             "eventMonth": "April",
             "eventYear": "2023",
-            "timeZone": "AST)|Heure Normale de l'Atlantique (HNA",
+            "timeZone": "AST",
             "city": "ottawa",
-            "host": "PAC - NCR Region|SAC - Région de la capitale nationale",
+            "host": "PAC - NCR Region",
             "hostOther": "host",
-            "registrationStatus": "Open|Ouvert",
+            "registrationStatus": "Open",
             "registrationUrl": "null",
-            "eventLanguage": "English|Anglais ",
-            "eventDelivery": "In-person|En personne, Online|En ligne",
-            "locations": "Alberta|Alberta, British Columbia|Colombie-Britannique",
+            "eventLanguage": "English",
+            "eventDelivery": "In-person, Online",
+            "locations": "Alberta, British Columbia",
             "multiDayEvent": true,
             "noOfDays": 9,
-            "tags": "title_customtitleen timezone_ast)|heurenormaledel'atlantique(hna city_ottawa month_april year_2023 language_english|anglais delivery_in-person|enpersonne delivery_online|enligne location_alberta|alberta location_britishcolumbia|colombie-britannique"
+            "tags": "title_customtitleen timezone_ast city_ottawa month_april year_2023 language_english delivery_in-person delivery_online location_alberta location_britishcolumbia"
         },
         {
             "pageid": "4324222232432",
@@ -237,10 +233,10 @@
             "registrationUrl": "https://www.canada.ca/en.html",
             "eventLanguage": "English",
             "eventDelivery": "In-person, Online",
-            "locations": "Alberta, British Columbia, Ontario – except NCR",
+            "locations": "Alberta, British Columbia, Ontario - except NCR",
             "multiDayEvent": true,
             "noOfDays": 3,
-            "tags": "title_askusanything timezone_mdt city_online id_4324222232432 month_april year_2023 language_english delivery_in-person delivery_online location_alberta location_britishcolumbia location_ontario–exceptncr"
+            "tags": "title_askusanything timezone_mdt city_online id_4324222232432 month_april year_2023 language_english delivery_in-person delivery_online location_alberta location_britishcolumbia location_ontario-exceptncr"
         },
         {
             "pageid": "null",
