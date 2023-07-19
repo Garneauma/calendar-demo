@@ -7,6 +7,10 @@
     ],
     "titles": [
         {
+            "value": "title_training123",
+            "text": "Training 123"
+        },
+        {
             "value": "title_melanie-testingcreatecustomizedevent",
             "text": "Melanie - Testing Create Customized Event"
         },
@@ -23,8 +27,8 @@
             "text": "Test event"
         },
         {
-            "value": "title_demooliver",
-            "text": "Demo Oliver"
+            "value": "title_customen",
+            "text": "Custom EN"
         },
         {
             "value": "title_canadaeventsinaugust",
@@ -33,6 +37,10 @@
         {
             "value": "title_event2canada",
             "text": "Event 2 canada"
+        },
+        {
+            "value": "title_demooliver",
+            "text": "Demo Oliver"
         },
         {
             "value": "title_test3en",
@@ -79,6 +87,10 @@
     ],
     "subjects": [
         {
+            "value": "subject_findopportunities",
+            "text": "Find opportunities"
+        },
+        {
             "value": "subject_howtosell",
             "text": "How to sell"
         },
@@ -91,15 +103,40 @@
             "text": "Bidding"
         },
         {
-            "value": "subject_findopportunities",
-            "text": "Find opportunities"
-        },
-        {
             "value": "subject_",
             "text": ""
         }
     ],
     "events": {
+        "20230717075437774": {
+            "pageid": "20230717075437774",
+            "title": "Training 123",
+            "description": "<p>The training will be held at the...</p>\n",
+            "shortDescription": "Training",
+            "subject": "Find opportunities",
+            "startDate": "2023-07-26T07:54:00.000-04:00",
+            "endDate": "2023-07-26T14:00:00.000-04:00",
+            "sortDate": "2023-07-26T07:54:00",
+            "formatStartDate": "July 26, 2023",
+            "formatStartTime": "7:54 am",
+            "formatEndDate": "July 26, 2023",
+            "formatEndTime": "2 pm",
+            "startDay": "Wednesday",
+            "endDay": "Wednesday",
+            "eventMonth": "July",
+            "eventYear": "2023",
+            "timeZone": "AST",
+            "city": "Bathurst",
+            "host": "Procurement Assistance Canada - Atlantic Region",
+            "hostOther": "",
+            "registrationStatus": "Open",
+            "registrationUrl": null,
+            "eventLanguage": "English",
+            "eventDelivery": "Online",
+            "locations": "New Brunswick",
+            "multiDayEvent": false,
+            "tags": "subject_findopportunities title_training123 timezone_ast city_bathurst id_20230717075437774 month_july year_2023 language_english delivery_online location_newbrunswick"
+        },
         "20230713141641667": {
             "pageid": "20230713141641667",
             "title": "Melanie - Testing Create Customized Event",
@@ -220,9 +257,9 @@
         },
         "20230712090249663": {
             "pageid": "20230712090249663",
-            "title": "Demo Oliver",
-            "description": "<p>Long desc en</p>\n",
-            "shortDescription": "Short desc for Oliver",
+            "title": "Custom EN",
+            "description": "<p>test description</p>\n",
+            "shortDescription": "blabla",
             "subject": "Find opportunities",
             "startDate": "2023-07-18T09:02:00.000-04:00",
             "endDate": "2023-07-19T09:02:00.000-04:00",
@@ -246,7 +283,7 @@
             "locations": "Canada-wide",
             "multiDayEvent": true,
             "noOfDays": 2,
-            "tags": "subject_findopportunities title_demooliver timezone_cst city_city id_20230712090249663 month_july year_2023 language_english delivery_in-person location_canada-wide"
+            "tags": "subject_findopportunities title_customen timezone_cst city_city id_20230712090249663 month_july year_2023 language_english delivery_in-person location_canada-wide"
         },
         "20230711164707394": {
             "pageid": "20230711164707394",
@@ -864,9 +901,9 @@
         },
         {
             "pageid": "20230712090249663",
-            "title": "Demo Oliver",
-            "description": "<p>Long desc en</p>\n",
-            "shortDescription": "Short desc for Oliver",
+            "title": "Custom EN",
+            "description": "<p>test description</p>\n",
+            "shortDescription": "blabla",
             "subject": "Find opportunities",
             "startDate": "2023-07-18T09:02:00.000-04:00",
             "endDate": "2023-07-19T09:02:00.000-04:00",
@@ -890,7 +927,7 @@
             "locations": "Canada-wide",
             "multiDayEvent": true,
             "noOfDays": 2,
-            "tags": "subject_findopportunities title_demooliver timezone_cst city_city id_20230712090249663 month_july year_2023 language_english delivery_in-person location_canada-wide"
+            "tags": "subject_findopportunities title_customen timezone_cst city_city id_20230712090249663 month_july year_2023 language_english delivery_in-person location_canada-wide"
         },
         {
             "pageid": "20230713141641667",
@@ -920,6 +957,35 @@
             "locations": "New Brunswick",
             "multiDayEvent": false,
             "tags": "subject_howtosell title_melanie-testingcreatecustomizedevent timezone_ast city_bathurst id_20230713141641667 month_july year_2023 language_english delivery_online location_newbrunswick"
+        },
+        {
+            "pageid": "20230717075437774",
+            "title": "Training 123",
+            "description": "<p>The training will be held at the...</p>\n",
+            "shortDescription": "Training",
+            "subject": "Find opportunities",
+            "startDate": "2023-07-26T07:54:00.000-04:00",
+            "endDate": "2023-07-26T14:00:00.000-04:00",
+            "sortDate": "2023-07-26T07:54:00",
+            "formatStartDate": "July 26, 2023",
+            "formatStartTime": "7:54 am",
+            "formatEndDate": "July 26, 2023",
+            "formatEndTime": "2 pm",
+            "startDay": "Wednesday",
+            "endDay": "Wednesday",
+            "eventMonth": "July",
+            "eventYear": "2023",
+            "timeZone": "AST",
+            "city": "Bathurst",
+            "host": "Procurement Assistance Canada - Atlantic Region",
+            "hostOther": "",
+            "registrationStatus": "Open",
+            "registrationUrl": null,
+            "eventLanguage": "English",
+            "eventDelivery": "Online",
+            "locations": "New Brunswick",
+            "multiDayEvent": false,
+            "tags": "subject_findopportunities title_training123 timezone_ast city_bathurst id_20230717075437774 month_july year_2023 language_english delivery_online location_newbrunswick"
         },
         {
             "pageid": "20230712155549642",
