@@ -23,7 +23,7 @@
             "text": "Marc - Gabarit test"
         },
         {
-            "value": "title_événnementtest",
+            "value": "title_evennementtest",
             "text": "Événnement test"
         },
         {
@@ -31,7 +31,7 @@
             "text": "Custom FR"
         },
         {
-            "value": "title_évènementsd'aoûtaucanada",
+            "value": "title_evenementsdaoutaucanada",
             "text": "Évènements d'août au Canada"
         },
         {
@@ -63,7 +63,7 @@
             "text": "Marc - Gabarit test"
         },
         {
-            "value": "title_démospac",
+            "value": "title_demospac",
             "text": "Démo SPAC"
         },
         {
@@ -77,11 +77,11 @@
             "text": "Nouveau-Brunswick"
         },
         {
-            "value": "location_nouvelle-écosse",
+            "value": "location_nouvelle-ecosse",
             "text": "Nouvelle-Écosse"
         },
         {
-            "value": "location_régiondelacapitalenationale-rcn",
+            "value": "location_regiondelacapitalenationale-rcn",
             "text": "Région de la capitale nationale - RCN"
         },
         {
@@ -97,13 +97,13 @@
             "text": "Colombie-Britannique"
         },
         {
-            "value": "location_québec–saufrcn",
+            "value": "location_quebec–saufrcn",
             "text": "Québec – sauf RCN"
         }
     ],
     "subjects": [
         {
-            "value": "subject_trouverdesopportunités",
+            "value": "subject_trouverdesopportunites",
             "text": "Trouver des opportunités"
         },
         {
@@ -111,7 +111,7 @@
             "text": "Comment vendre"
         },
         {
-            "value": "subject_comprendrel'approvisionnement",
+            "value": "subject_comprendrelapprovisionnement",
             "text": "Comprendre l'approvisionnement"
         },
         {
@@ -143,7 +143,7 @@
             "eventYear": "2023",
             "timeZone": "HNA",
             "city": "Bathurst",
-            "host": "Soutien en approvisionnement Canada - Région de l'Atlantique",
+            "host": "SAC - Région de l'Atlantique",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -151,7 +151,7 @@
             "eventDelivery": "En ligne",
             "locations": "Nouveau-Brunswick",
             "multiDayEvent": false,
-            "tags": "subject_trouverdesopportunités title_formation123 timezone_hna city_bathurst id_20230717075437774 month_juillet year_2023 language_anglais delivery_enligne location_nouveau-brunswick"
+            "tags": "subject_trouverdesopportunites title_formation123 timezone_hna city_bathurst id_20230717075437774 month_juillet year_2023 language_anglais delivery_enligne location_nouveau-brunswick"
         },
         "20230713141641667": {
             "pageid": "20230713141641667",
@@ -172,7 +172,7 @@
             "eventYear": "2023",
             "timeZone": "HNA",
             "city": "Bathurst",
-            "host": "Soutien en approvisionnement Canada - Région de l'Atlantique",
+            "host": "SAC - Région de l'Atlantique",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -201,7 +201,7 @@
             "eventYear": "2023",
             "timeZone": "HNA",
             "city": "Moncton",
-            "host": "Soutien en approvisionnement Canada - Région de l'Atlantique",
+            "host": "SAC - Région de l'Atlantique",
             "hostOther": "MWS-3118",
             "registrationStatus": "L'inscription pour cet événement a été fermée.",
             "registrationUrl": "https://www.canada.ca/fr.html",
@@ -209,7 +209,7 @@
             "eventDelivery": "En ligne",
             "locations": "Nouvelle-Écosse",
             "multiDayEvent": false,
-            "tags": "subject_comprendrel'approvisionnement title_mws-3117 timezone_hna city_moncton id_20230714094300311 month_juillet year_2023 language_bilingue delivery_enligne location_nouvelle-écosse"
+            "tags": "subject_comprendrelapprovisionnement title_mws-3117 timezone_hna city_moncton id_20230714094300311 month_juillet year_2023 language_bilingue delivery_enligne location_nouvelle-ecosse"
         },
         "20230712160153716": {
             "pageid": "20230712160153716",
@@ -230,7 +230,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Ottawa",
-            "host": "Soutien en approvisionnement Canada - Région de la capitale nationale",
+            "host": "SAC - Région de la capitale nationale",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": "https://www.canada.ca/fr",
@@ -239,7 +239,7 @@
             "locations": "Région de la capitale nationale - RCN",
             "multiDayEvent": true,
             "noOfDays": 3,
-            "tags": "subject_soumissionner title_marc-gabarittest timezone_hne city_ottawa id_20230712160153716 month_octobre year_2023 language_français delivery_enligne location_régiondelacapitalenationale-rcn"
+            "tags": "subject_soumissionner title_marc-gabarittest timezone_hne city_ottawa id_20230712160153716 month_octobre year_2023 language_francais delivery_enligne location_regiondelacapitalenationale-rcn"
         },
         "20230712101649681": {
             "pageid": "20230712101649681",
@@ -260,7 +260,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Gtineau",
-            "host": "Soutien en approvisionnement Canada - Région de la capitale nationale",
+            "host": "SAC - Région de la capitale nationale",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -269,7 +269,7 @@
             "locations": "Région de la capitale nationale - RCN",
             "multiDayEvent": true,
             "noOfDays": 2,
-            "tags": "subject_commentvendre title_événnementtest timezone_hne city_gtineau id_20230712101649681 month_juillet year_2023 language_anglais delivery_enligne location_régiondelacapitalenationale-rcn"
+            "tags": "subject_commentvendre title_evennementtest timezone_hne city_gtineau id_20230712101649681 month_juillet year_2023 language_anglais delivery_enligne location_regiondelacapitalenationale-rcn"
         },
         "20230712090249663": {
             "pageid": "20230712090249663",
@@ -290,7 +290,7 @@
             "eventYear": "2023",
             "timeZone": "HNC",
             "city": "City",
-            "host": "Soutien en approvisionnement Canada - Région du Pacifique",
+            "host": "SAC - Région du Pacifique",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -299,7 +299,7 @@
             "locations": "Ensemble du Canada",
             "multiDayEvent": true,
             "noOfDays": 2,
-            "tags": "subject_trouverdesopportunités title_customfr timezone_hnc city_city id_20230712090249663 month_juillet year_2023 language_anglais delivery_enpersonne location_ensembleducanada"
+            "tags": "subject_trouverdesopportunites title_customfr timezone_hnc city_city id_20230712090249663 month_juillet year_2023 language_anglais delivery_enpersonne location_ensembleducanada"
         },
         "20230711164707394": {
             "pageid": "20230711164707394",
@@ -320,7 +320,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Montreal",
-            "host": "Soutien en approvisionnement Canada - Région du Québec",
+            "host": "SAC - Région du Québec",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -329,7 +329,7 @@
             "locations": "Ensemble du Canada",
             "multiDayEvent": true,
             "noOfDays": 31,
-            "tags": "title_évènementsd'aoûtaucanada timezone_hne city_montreal id_20230711164707394 month_août year_2023 language_bilingue delivery_enpersonne location_ensembleducanada"
+            "tags": "title_evenementsdaoutaucanada timezone_hne city_montreal id_20230711164707394 month_aout year_2023 language_bilingue delivery_enpersonne location_ensembleducanada"
         },
         "20230712074633533": {
             "pageid": "20230712074633533",
@@ -350,7 +350,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Ottawa",
-            "host": "Soutien en approvisionnement Canada - Région de l'Ontario",
+            "host": "SAC - Région de l'Ontario",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -379,7 +379,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Ottawa",
-            "host": "Soutien en approvisionnement Canada - Région de la capitale nationale",
+            "host": "SAC - Région de la capitale nationale",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -387,7 +387,7 @@
             "eventDelivery": "En ligne",
             "locations": "Région de la capitale nationale - RCN",
             "multiDayEvent": false,
-            "tags": "subject_trouverdesopportunités title_oliverdemo timezone_hne city_ottawa id_20230713104557522 month_juillet year_2023 language_anglais delivery_enligne location_régiondelacapitalenationale-rcn"
+            "tags": "subject_trouverdesopportunites title_oliverdemo timezone_hne city_ottawa id_20230713104557522 month_juillet year_2023 language_anglais delivery_enligne location_regiondelacapitalenationale-rcn"
         },
         "2023071209440451": {
             "pageid": "2023071209440451",
@@ -408,7 +408,7 @@
             "eventYear": "2023",
             "timeZone": "HNC",
             "city": "Montreal",
-            "host": "Soutien en approvisionnement Canada - Région du Québec",
+            "host": "SAC - Région du Québec",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -445,7 +445,7 @@
             "eventDelivery": "En ligne",
             "locations": "Ensemble du Canada",
             "multiDayEvent": false,
-            "tags": "subject_soumissionner title_marc-gabarittest timezone_hne city_ottawa id_20230712155018418 month_août year_2023 language_bilingue delivery_enligne location_ensembleducanada"
+            "tags": "subject_soumissionner title_marc-gabarittest timezone_hne city_ottawa id_20230712155018418 month_aout year_2023 language_bilingue delivery_enligne location_ensembleducanada"
         },
         "20230714095612152": {
             "pageid": "20230714095612152",
@@ -474,7 +474,7 @@
             "eventDelivery": "En personne, En ligne",
             "locations": "Ensemble du Canada",
             "multiDayEvent": false,
-            "tags": "subject_comprendrel'approvisionnement title_mws-3117 city_toronto id_20230714095612152 month_juillet year_2023 language_anglais language_français language_bilingue language_asl language_qsl language_autre delivery_enpersonne delivery_enligne location_ensembleducanada"
+            "tags": "subject_comprendrelapprovisionnement title_mws-3117 city_toronto id_20230714095612152 month_juillet year_2023 language_anglais language_francais language_bilingue language_asl language_qsl language_autre delivery_enpersonne delivery_enligne location_ensembleducanada"
         },
         "20230712160905315": {
             "pageid": "20230712160905315",
@@ -495,7 +495,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Toronto",
-            "host": "Soutien en approvisionnement Canada - Région de l'Ontario",
+            "host": "SAC - Région de l'Ontario",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": "https://www.canada.ca/fr",
@@ -524,7 +524,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Hamilton",
-            "host": "Soutien en approvisionnement Canada - Région de l'Ontario",
+            "host": "SAC - Région de l'Ontario",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": "https://www.canada.ca/fr.html",
@@ -532,7 +532,7 @@
             "eventDelivery": "En personne, En ligne",
             "locations": "Région de la capitale nationale - RCN",
             "multiDayEvent": false,
-            "tags": "subject_comprendrel'approvisionnement title_mws-3140-fr timezone_hne city_hamilton id_2023071411164982 month_juillet year_2023 language_anglais language_français delivery_enpersonne delivery_enligne location_régiondelacapitalenationale-rcn"
+            "tags": "subject_comprendrelapprovisionnement title_mws-3140-fr timezone_hne city_hamilton id_2023071411164982 month_juillet year_2023 language_anglais language_francais delivery_enpersonne delivery_enligne location_regiondelacapitalenationale-rcn"
         },
         "20230712155928597": {
             "pageid": "20230712155928597",
@@ -553,7 +553,7 @@
             "eventYear": "2023",
             "timeZone": "HNP",
             "city": "Vancouver",
-            "host": "Soutien en approvisionnement Canada - Région du Pacifique",
+            "host": "SAC - Région du Pacifique",
             "hostOther": "",
             "registrationStatus": "L'inscription pour cet événement a été fermée.",
             "registrationUrl": null,
@@ -582,7 +582,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Chicoutimi",
-            "host": "Soutien en approvisionnement Canada - Région du Québec",
+            "host": "SAC - Région du Québec",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -590,7 +590,7 @@
             "eventDelivery": "En personne",
             "locations": "Québec – sauf RCN",
             "multiDayEvent": false,
-            "tags": "subject_soumissionner title_démospac timezone_hne city_chicoutimi id_20230712160402626 month_juillet year_2023 language_français delivery_enpersonne location_québec–saufrcn"
+            "tags": "subject_soumissionner title_demospac timezone_hne city_chicoutimi id_20230712160402626 month_juillet year_2023 language_francais delivery_enpersonne location_quebec–saufrcn"
         },
         "20230712155549642": {
             "pageid": "20230712155549642",
@@ -611,7 +611,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Vancouver",
-            "host": "SAC -Région de l'Ouest",
+            "host": "Soutien en approvisionnement Canada - Région de l'Ouest",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": "https://www.canada.ca/fr",
@@ -643,7 +643,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Ottawa",
-            "host": "Soutien en approvisionnement Canada - Région de l'Ontario",
+            "host": "SAC - Région de l'Ontario",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -672,7 +672,7 @@
             "eventYear": "2023",
             "timeZone": "HNC",
             "city": "Montreal",
-            "host": "Soutien en approvisionnement Canada - Région du Québec",
+            "host": "SAC - Région du Québec",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -701,7 +701,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Gtineau",
-            "host": "Soutien en approvisionnement Canada - Région de la capitale nationale",
+            "host": "SAC - Région de la capitale nationale",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -710,7 +710,7 @@
             "locations": "Région de la capitale nationale - RCN",
             "multiDayEvent": true,
             "noOfDays": 2,
-            "tags": "subject_commentvendre title_événnementtest timezone_hne city_gtineau id_20230712101649681 month_juillet year_2023 language_anglais delivery_enligne location_régiondelacapitalenationale-rcn"
+            "tags": "subject_commentvendre title_evennementtest timezone_hne city_gtineau id_20230712101649681 month_juillet year_2023 language_anglais delivery_enligne location_regiondelacapitalenationale-rcn"
         },
         {
             "pageid": "20230712155928597",
@@ -731,7 +731,7 @@
             "eventYear": "2023",
             "timeZone": "HNP",
             "city": "Vancouver",
-            "host": "Soutien en approvisionnement Canada - Région du Pacifique",
+            "host": "SAC - Région du Pacifique",
             "hostOther": "",
             "registrationStatus": "L'inscription pour cet événement a été fermée.",
             "registrationUrl": null,
@@ -760,7 +760,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Ottawa",
-            "host": "Soutien en approvisionnement Canada - Région de la capitale nationale",
+            "host": "SAC - Région de la capitale nationale",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -768,7 +768,7 @@
             "eventDelivery": "En ligne",
             "locations": "Région de la capitale nationale - RCN",
             "multiDayEvent": false,
-            "tags": "subject_trouverdesopportunités title_oliverdemo timezone_hne city_ottawa id_20230713104557522 month_juillet year_2023 language_anglais delivery_enligne location_régiondelacapitalenationale-rcn"
+            "tags": "subject_trouverdesopportunites title_oliverdemo timezone_hne city_ottawa id_20230713104557522 month_juillet year_2023 language_anglais delivery_enligne location_regiondelacapitalenationale-rcn"
         },
         {
             "pageid": "20230712160402626",
@@ -789,7 +789,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Chicoutimi",
-            "host": "Soutien en approvisionnement Canada - Région du Québec",
+            "host": "SAC - Région du Québec",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -797,7 +797,7 @@
             "eventDelivery": "En personne",
             "locations": "Québec – sauf RCN",
             "multiDayEvent": false,
-            "tags": "subject_soumissionner title_démospac timezone_hne city_chicoutimi id_20230712160402626 month_juillet year_2023 language_français delivery_enpersonne location_québec–saufrcn"
+            "tags": "subject_soumissionner title_demospac timezone_hne city_chicoutimi id_20230712160402626 month_juillet year_2023 language_francais delivery_enpersonne location_quebec–saufrcn"
         },
         {
             "pageid": "20230714094300311",
@@ -818,7 +818,7 @@
             "eventYear": "2023",
             "timeZone": "HNA",
             "city": "Moncton",
-            "host": "Soutien en approvisionnement Canada - Région de l'Atlantique",
+            "host": "SAC - Région de l'Atlantique",
             "hostOther": "MWS-3118",
             "registrationStatus": "L'inscription pour cet événement a été fermée.",
             "registrationUrl": "https://www.canada.ca/fr.html",
@@ -826,7 +826,7 @@
             "eventDelivery": "En ligne",
             "locations": "Nouvelle-Écosse",
             "multiDayEvent": false,
-            "tags": "subject_comprendrel'approvisionnement title_mws-3117 timezone_hna city_moncton id_20230714094300311 month_juillet year_2023 language_bilingue delivery_enligne location_nouvelle-écosse"
+            "tags": "subject_comprendrelapprovisionnement title_mws-3117 timezone_hna city_moncton id_20230714094300311 month_juillet year_2023 language_bilingue delivery_enligne location_nouvelle-ecosse"
         },
         {
             "pageid": "20230714095612152",
@@ -855,7 +855,7 @@
             "eventDelivery": "En personne, En ligne",
             "locations": "Ensemble du Canada",
             "multiDayEvent": false,
-            "tags": "subject_comprendrel'approvisionnement title_mws-3117 city_toronto id_20230714095612152 month_juillet year_2023 language_anglais language_français language_bilingue language_asl language_qsl language_autre delivery_enpersonne delivery_enligne location_ensembleducanada"
+            "tags": "subject_comprendrelapprovisionnement title_mws-3117 city_toronto id_20230714095612152 month_juillet year_2023 language_anglais language_francais language_bilingue language_asl language_qsl language_autre delivery_enpersonne delivery_enligne location_ensembleducanada"
         },
         {
             "pageid": "2023071411164982",
@@ -876,7 +876,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Hamilton",
-            "host": "Soutien en approvisionnement Canada - Région de l'Ontario",
+            "host": "SAC - Région de l'Ontario",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": "https://www.canada.ca/fr.html",
@@ -884,7 +884,7 @@
             "eventDelivery": "En personne, En ligne",
             "locations": "Région de la capitale nationale - RCN",
             "multiDayEvent": false,
-            "tags": "subject_comprendrel'approvisionnement title_mws-3140-fr timezone_hne city_hamilton id_2023071411164982 month_juillet year_2023 language_anglais language_français delivery_enpersonne delivery_enligne location_régiondelacapitalenationale-rcn"
+            "tags": "subject_comprendrelapprovisionnement title_mws-3140-fr timezone_hne city_hamilton id_2023071411164982 month_juillet year_2023 language_anglais language_francais delivery_enpersonne delivery_enligne location_regiondelacapitalenationale-rcn"
         },
         {
             "pageid": "20230712160905315",
@@ -905,7 +905,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Toronto",
-            "host": "Soutien en approvisionnement Canada - Région de l'Ontario",
+            "host": "SAC - Région de l'Ontario",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": "https://www.canada.ca/fr",
@@ -934,7 +934,7 @@
             "eventYear": "2023",
             "timeZone": "HNC",
             "city": "City",
-            "host": "Soutien en approvisionnement Canada - Région du Pacifique",
+            "host": "SAC - Région du Pacifique",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -943,7 +943,7 @@
             "locations": "Ensemble du Canada",
             "multiDayEvent": true,
             "noOfDays": 2,
-            "tags": "subject_trouverdesopportunités title_customfr timezone_hnc city_city id_20230712090249663 month_juillet year_2023 language_anglais delivery_enpersonne location_ensembleducanada"
+            "tags": "subject_trouverdesopportunites title_customfr timezone_hnc city_city id_20230712090249663 month_juillet year_2023 language_anglais delivery_enpersonne location_ensembleducanada"
         },
         {
             "pageid": "20230713141641667",
@@ -964,7 +964,7 @@
             "eventYear": "2023",
             "timeZone": "HNA",
             "city": "Bathurst",
-            "host": "Soutien en approvisionnement Canada - Région de l'Atlantique",
+            "host": "SAC - Région de l'Atlantique",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -993,7 +993,7 @@
             "eventYear": "2023",
             "timeZone": "HNA",
             "city": "Bathurst",
-            "host": "Soutien en approvisionnement Canada - Région de l'Atlantique",
+            "host": "SAC - Région de l'Atlantique",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -1001,7 +1001,7 @@
             "eventDelivery": "En ligne",
             "locations": "Nouveau-Brunswick",
             "multiDayEvent": false,
-            "tags": "subject_trouverdesopportunités title_formation123 timezone_hna city_bathurst id_20230717075437774 month_juillet year_2023 language_anglais delivery_enligne location_nouveau-brunswick"
+            "tags": "subject_trouverdesopportunites title_formation123 timezone_hna city_bathurst id_20230717075437774 month_juillet year_2023 language_anglais delivery_enligne location_nouveau-brunswick"
         },
         {
             "pageid": "20230712155549642",
@@ -1022,7 +1022,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Vancouver",
-            "host": "SAC -Région de l'Ouest",
+            "host": "Soutien en approvisionnement Canada - Région de l'Ouest",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": "https://www.canada.ca/fr",
@@ -1051,7 +1051,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Montreal",
-            "host": "Soutien en approvisionnement Canada - Région du Québec",
+            "host": "SAC - Région du Québec",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": null,
@@ -1060,7 +1060,7 @@
             "locations": "Ensemble du Canada",
             "multiDayEvent": true,
             "noOfDays": 31,
-            "tags": "title_évènementsd'aoûtaucanada timezone_hne city_montreal id_20230711164707394 month_août year_2023 language_bilingue delivery_enpersonne location_ensembleducanada"
+            "tags": "title_evenementsdaoutaucanada timezone_hne city_montreal id_20230711164707394 month_aout year_2023 language_bilingue delivery_enpersonne location_ensembleducanada"
         },
         {
             "pageid": "20230712155018418",
@@ -1089,7 +1089,7 @@
             "eventDelivery": "En ligne",
             "locations": "Ensemble du Canada",
             "multiDayEvent": false,
-            "tags": "subject_soumissionner title_marc-gabarittest timezone_hne city_ottawa id_20230712155018418 month_août year_2023 language_bilingue delivery_enligne location_ensembleducanada"
+            "tags": "subject_soumissionner title_marc-gabarittest timezone_hne city_ottawa id_20230712155018418 month_aout year_2023 language_bilingue delivery_enligne location_ensembleducanada"
         },
         {
             "pageid": "20230712160153716",
@@ -1110,7 +1110,7 @@
             "eventYear": "2023",
             "timeZone": "HNE",
             "city": "Ottawa",
-            "host": "Soutien en approvisionnement Canada - Région de la capitale nationale",
+            "host": "SAC - Région de la capitale nationale",
             "hostOther": "",
             "registrationStatus": "Ouvert",
             "registrationUrl": "https://www.canada.ca/fr",
@@ -1119,7 +1119,7 @@
             "locations": "Région de la capitale nationale - RCN",
             "multiDayEvent": true,
             "noOfDays": 3,
-            "tags": "subject_soumissionner title_marc-gabarittest timezone_hne city_ottawa id_20230712160153716 month_octobre year_2023 language_français delivery_enligne location_régiondelacapitalenationale-rcn"
+            "tags": "subject_soumissionner title_marc-gabarittest timezone_hne city_ottawa id_20230712160153716 month_octobre year_2023 language_francais delivery_enligne location_regiondelacapitalenationale-rcn"
         }
     ]
 }
